@@ -137,7 +137,7 @@ if __name__ == '__main__':
     #player_color = 'black'
     #black = [6, 11, 13, 21, 23]
     #white = [3, 4, 12,14,22]
-    #44 sol:6
+    #44 sol:6!
     #player_color = 'black'  # white | black
     #black = [3, 5,11, 13, 16, 17, 21, 34]
     #white = [2, 10, 14, 15, 22, 25, 29, 28]
@@ -146,10 +146,10 @@ if __name__ == '__main__':
     #black = [12, 14, 16, 18, 21, 29, 30, 33, 5]
     #white = [1, 3, 8, 11, 13, 23, 31, 35, 6]
     #52 sol:33
-    #player_color = 'black'
-    #black = [3, 13, 15, 17, 20, 26, 29, 30, 10, 8]
-    #white = [1, 2, 4, 7, 12, 28, 31, 34, 0, 35]
-    max_depth = 6
+    player_color = 'black'
+    black = [3, 13, 15, 17, 20, 26, 29, 30, 10, 8]
+    white = [1, 2, 4, 7, 12, 28, 31, 34, 0, 35]
+    max_depth = 18 - len(black)
 
     pattern_book = load_pattern_book()
     black_features, white_features = init_board(black, white, pattern_book)
