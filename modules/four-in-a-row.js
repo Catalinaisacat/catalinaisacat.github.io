@@ -294,7 +294,7 @@ var jsPsychFourInARow = (function (jspsych) {
                     else if (this.state == "planing"){
                         this.mousedown_sound.play();
                         console.log('mouse down');
-                        //this.planing_move.push(piece);
+                        this.planing_move.push(piece);
                         this.click_mode = "highlight";    
                         this.draw_board(click_x - this.rect_left, click_y - this.rect_top);
                         // this.cvs.addEventListener("mouseup", (event) => {this.mouseup_sound.play();console.log(event); this.click_mode = "normal"; this.draw_board(click_x - this.rect_left, click_y - this.rect_top);});
@@ -313,11 +313,21 @@ var jsPsychFourInARow = (function (jspsych) {
                         // }
                         if (this.tree[this.current_state].includes(piece)){
                             console.log("success");
-                            this.game_result = "success"
+                            if (this.tutorial){
+                                this.game_result = "tutorial success"
+                            }
+                            else{
+                                this.game_result = "success"
+                            }
                         }
                         else{
                             console.log("fail");
-                            this.game_result = "fail"
+                            if (this.tutorial){
+                                this.game_result = "tutorial fail"
+                            }
+                            else{
+                                this.game_result = "fail"
+                            }
                         }
                         this.make_move(piece);
                         this.draw_board(click_x - this.rect_left, click_y - this.rect_top);
@@ -389,7 +399,7 @@ var jsPsychFourInARow = (function (jspsych) {
                 if (this.state == "planing"){
                     this.mousedown_sound.play();
                     console.log('mouse down');
-                    //this.planing_move.push(piece);
+                    this.planing_move.push(piece);
                     this.click_mode = "highlight";    
                     this.draw_board(click_x - this.rect_left, click_y - this.rect_top);
                     // this.cvs.addEventListener("mouseup", (event) => {this.mouseup_sound.play();console.log(event); this.click_mode = "normal"; this.draw_board(click_x - this.rect_left, click_y - this.rect_top);});
@@ -867,6 +877,7 @@ var jsPsychFourInARow = (function (jspsych) {
                 all_move_times: this.move_times,
                 duration: performance.now() - this.currentTrialStartTime,
                 mouse_movements: this.mouse_movements,
+                tree: this.tree
             };
             // clear the display
             this.display_element.innerHTML = "";
