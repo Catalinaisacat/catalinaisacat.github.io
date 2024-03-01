@@ -346,7 +346,7 @@ export function save_free_play_data(tid){
             // level = Math.max(0, level - 10);
         } else {
             // level = Math.max(0, level - 10);
-            ai_category = Math.min(ai_category - 1, 5)
+            ai_category = Math.max(ai_category - 1, 1)
         }
         last_result = data.result
         level = (ai_category - 1) * 40 + Math.floor(Math.random() * 40)
