@@ -1411,54 +1411,54 @@ export function create_timeline(timeline){
     timeline.push(preload);
     timeline.push(set_participant_id);
     timeline.push(enter_fullscreen);
-    // timeline.push(consent_form);
-    // timeline.push(demographic_survey);
-    // timeline.push(ynode(`
-    //     <p>
-    //         Welcome to our study! We will go through the instructions first.
-    //         <br/><br/>
-    //     </p>
-    // `))
-    // timeline.push(free_play_comprehension);
-    // timeline.push(ynode(`
-    //     <p>
-    //         You will now play two practice games to see how it works.
-    //         <br/><br/>
-    //     </p>
-    // `))
-    // timeline.push(ynode(`
-    //     <p>
-    //         Practice game 1
-    //         <br/><br/>
-    //     </p>
-    // `))
-    // timeline.push({
-    //     type: jsPsychFourInARowFreePlay,
-    //     game_index: 1,
-    //     tutorial: true,
-    //     get_level: () => 0,
-    //     on_load: () => {free_play_tutorial_try += 1;},
-    //     on_finish: save_freeplay_practice,
-    //     player: 1
-    // })
-    // timeline.push(ynode(`
-    //     <p>
-    //         Practice game 2
-    //         <br/><br/>
-    //     </p>
-    // `))
-    // timeline.push({
-    //     type: jsPsychFourInARowFreePlay,
-    //     game_index: 2,
-    //     tutorial: true,
-    //     get_level: () => 0,
-    //     on_finish: save_freeplay_practice,
-    //     player: 0
-    // })
-    // timeline.push(after_practice_free_play);
+    timeline.push(consent_form);
+    timeline.push(demographic_survey);
+    timeline.push(ynode(`
+        <p>
+            Welcome to our study! We will go through the instructions first.
+            <br/><br/>
+        </p>
+    `))
+    timeline.push(free_play_comprehension);
+    timeline.push(ynode(`
+        <p>
+            You will now play two practice games to see how it works.
+            <br/><br/>
+        </p>
+    `))
+    timeline.push(ynode(`
+        <p>
+            Practice game 1
+            <br/><br/>
+        </p>
+    `))
+    timeline.push({
+        type: jsPsychFourInARowFreePlay,
+        game_index: 1,
+        tutorial: true,
+        get_level: () => 0,
+        on_load: () => {free_play_tutorial_try += 1;},
+        on_finish: save_freeplay_practice,
+        player: 1
+    })
+    timeline.push(ynode(`
+        <p>
+            Practice game 2
+            <br/><br/>
+        </p>
+    `))
+    timeline.push({
+        type: jsPsychFourInARowFreePlay,
+        game_index: 2,
+        tutorial: true,
+        get_level: () => 0,
+        on_finish: save_freeplay_practice,
+        player: 0
+    })
+    timeline.push(after_practice_free_play);
     let color = 0;
     // // TODO: 4 -> 40
-    for(let i=0; i<4; i++){
+    for(let i=0; i<40; i++){
         timeline.push(ready_check_free_play((i + 1).toString()))
         color = (color+1) % 2;
         timeline.push({
@@ -1470,22 +1470,22 @@ export function create_timeline(timeline){
             free_play: true,
         })
     }
-    // timeline.push(ynode(`
-    //     <p>
-    //         You finished the first stage! Please leave this testing room and inform the experimenter.<br/>
-    //         <br/><br/>
-    //     </p>
-    // `))
-    // timeline.push(password_page);
-    // timeline.push(thinkaloud_comprehension);
-    // timeline.push(free_conversation_record);
-    // timeline.push(planning_comprehension);
-    // timeline.push(ynode(`
-    //     <p>
-    //         Let's do 2 practice puzzles!
-    //         <br/><br/>
-    //     </p>
-    // `))
+    timeline.push(ynode(`
+        <p>
+            You finished the first stage! Please leave this testing room and inform the experimenter.<br/>
+            <br/><br/>
+        </p>
+    `))
+    timeline.push(password_page);
+    timeline.push(thinkaloud_comprehension);
+    timeline.push(free_conversation_record);
+    timeline.push(planning_comprehension);
+    timeline.push(ynode(`
+        <p>
+            Let's do 2 practice puzzles!
+            <br/><br/>
+        </p>
+    `))
     timeline.push(ynode(`
         <p>
             Practice puzzle 1
@@ -1580,9 +1580,9 @@ export function create_timeline(timeline){
             puzzles_results[current_trail]['confidence'] = confidence;
         },
     })
-    // timeline.push(after_practice);
+    timeline.push(after_practice);
     // TODO: 4 -> 12
-    let N = 4;
+    let N = 12;
     for(let i=2; i<N; i++){
         timeline.push(ready_check_planning((i - 1).toString()))
         timeline.push({
