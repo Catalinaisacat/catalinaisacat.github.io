@@ -9,7 +9,9 @@ export var points = 0;
 export var bonus = 0;
 export var puzzle_bonus = 0;
 export var freeplay_bonus = 0;
-export var level = 50;
+export var level = 2;
+export var ai_category = 2;
+export var last_result = "win"
 export var current_trail = 0;
 export var free_play_tutorial_try = 0;
 export var puzzles_tutorial_try = 0;
@@ -42,9 +44,8 @@ export var freeplay_results = [{
     "opponent_move": "opponent_move",
     "result": "result"
 }];
-export var json_urls = [];
-export var audio_urls = [];
-export var video_urls = [];
+export var urls = [];
+export var zip = new JSZip();
 
 export function get_level(){
     return level
@@ -120,7 +121,9 @@ export function uploadData(id, category, game_index, data){
     a.textContent = 'Download JSON';
 
     document.body.appendChild(a);
-    a.click();
+    zip.file(a.download, blob)
+    // a.click();
+    urls.push(a)
 }
 
 
@@ -143,8 +146,6 @@ export function uploadcsv(id, category, game_index, data, need_trans){
         return str;
     }
     let csv = convertToCSV(data);
-    console.log(data)
-    console.log(csv)
     if(need_trans){
         const rows = csv.split('\r\n').map(row => row.split(','));
         const transposedRows = rows[0].map((_, colIndex) => rows.map(row => row[colIndex]));
@@ -163,7 +164,9 @@ export function uploadcsv(id, category, game_index, data, need_trans){
         a.download = pid + "_" + category + ".csv";
     }
     document.body.appendChild(a);
-    a.click();
+    zip.file(a.download, csvBlob)
+    // a.click();
+    urls.push(a)
 }
 
 
@@ -181,7 +184,6 @@ export async function readData(id, category, game_index){
 }
 
 export function save_puzzle_data(){
-    console.log(recordedBlobs);
     recorder.stop();
     let data = jsPsych.data.getLastTrialData().trials[0]
     if (data.submit_mode){
@@ -283,7 +285,10 @@ export function save_puzzle_data(){
         a.style = "display: none";
         a.download = pid + "_" + data.game_index + "_audio_recording.wav";
         a.href = audioUrl;
-        a.click();
+        document.body.appendChild(a);
+        // a.click();
+        urls.push(a)
+        zip.file(a.download, audioBlob)
         let videoBlob = new Blob(recordedBlobs, {type: 'video/mp4'});
         let videoUrl = window.URL.createObjectURL(videoBlob);
         let video_a = document.createElement('a');
@@ -296,12 +301,14 @@ export function save_puzzle_data(){
             video_a.download = pid + "_" + (data.game_index - 1) + '_screen_recording.mp4';
         }
         document.body.appendChild(video_a);
-        video_a.click();
+        // video_a.click();
+        zip.file(video_a.download, videoBlob)
+        urls.push(video_a)
         recordedBlobs = [];
-        setTimeout(() => {
-            document.body.removeChild(video_a);
-            window.URL.revokeObjectURL(videoUrl);
-        }, 100);
+        // setTimeout(() => {
+        //     document.body.removeChild(video_a);
+        //     window.URL.revokeObjectURL(videoUrl);
+        // }, 100);
     }
 }
 
@@ -330,13 +337,19 @@ export function save_free_play_data(tid){
     } else {
         if (data.result == 'win'){
             freeplay_bonus += 0.2;
-            level = Math.min(199, level + 10);
+            if(last_result == 'win'){
+                ai_category = Math.min(ai_category + 1, 5)
+            }
+            // level = Math.min(199, level + 10);
         } else if (data.result == 'tie'){
             freeplay_bonus += 0.1;
-            level = Math.max(0, level - 10);
+            // level = Math.max(0, level - 10);
         } else {
-            level = Math.max(0, level - 10);
+            // level = Math.max(0, level - 10);
+            ai_category = Math.min(ai_category - 1, 5)
         }
+        last_result = data.result
+        level = (ai_category - 1) * 40 + Math.floor(Math.random() * 40)
     }
     var date = new Date();
     let result = {
@@ -1358,8 +1371,6 @@ export function create_timeline(timeline){
             uploadcsv(1,"all_freeplay",-1,freeplay_results, false);
             //jsPsych.data.displayData();
             recorder.start();
-        },
-        on_finish: () => {
             recorder.stop();
             let videoBlob = new Blob(recordedBlobs, {type: 'video/mp4'});
             let videoUrl = window.URL.createObjectURL(videoBlob);
@@ -1368,13 +1379,25 @@ export function create_timeline(timeline){
             video_a.href = videoUrl;
             video_a.download = pid + '_12_screen_recording.mp4';
             document.body.appendChild(video_a);
-            video_a.click();
+            // video_a.click();
+            zip.file(video_a.download, videoBlob)
             recordedBlobs = [];
-            setTimeout(() => {
-                document.body.removeChild(video_a);
-                window.URL.revokeObjectURL(videoUrl);
-            }, 100);
-        }
+            // setTimeout(() => {
+            //     document.body.removeChild(video_a);
+            //     window.URL.revokeObjectURL(videoUrl);
+            // }, 100);
+            zip.generateAsync({
+                type: 'blob'
+            }).then(function(content) {
+                var a = document.createElement('a');
+                a.download = pid + '.zip';
+                a.style.display = 'none';
+                a.href = URL.createObjectURL(content);
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        },
     }
     // -------------------------------------------------- MAIN ---------------------------------------------------------
 
@@ -1433,20 +1456,20 @@ export function create_timeline(timeline){
     //     player: 0
     // })
     // timeline.push(after_practice_free_play);
-    // let color = 0;
+    let color = 0;
     // // TODO: 4 -> 40
-    // for(let i=0; i<4; i++){
-    //     timeline.push(ready_check_free_play((i + 1).toString()))
-    //     color = (color+1) % 2;
-    //     timeline.push({
-    //         type: jsPsychFourInARowFreePlay,
-    //         game_index: i+1,
-    //         get_level: get_level,
-    //         on_finish: () => {save_free_play_data(i)},
-    //         player: color,
-    //         free_play: true,
-    //     })
-    // }
+    for(let i=0; i<4; i++){
+        timeline.push(ready_check_free_play((i + 1).toString()))
+        color = (color+1) % 2;
+        timeline.push({
+            type: jsPsychFourInARowFreePlay,
+            game_index: i+1,
+            get_level: get_level,
+            on_finish: () => {save_free_play_data(i)},
+            player: color,
+            free_play: true,
+        })
+    }
     // timeline.push(ynode(`
     //     <p>
     //         You finished the first stage! Please leave this testing room and inform the experimenter.<br/>
@@ -1557,9 +1580,9 @@ export function create_timeline(timeline){
             puzzles_results[current_trail]['confidence'] = confidence;
         },
     })
-    timeline.push(after_practice);
+    // timeline.push(after_practice);
     // TODO: 4 -> 12
-    let N = 5;
+    let N = 4;
     for(let i=2; i<N; i++){
         timeline.push(ready_check_planning((i - 1).toString()))
         timeline.push({
