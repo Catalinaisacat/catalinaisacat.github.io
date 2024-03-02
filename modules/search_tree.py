@@ -101,10 +101,10 @@ def check_step_by_step(tree):
 
 
 if __name__ == '__main__':
-    #13 sol:25
-    #player_color = 'black'
-    #black = [23, 26, 31, 34]
-    #white = [5, 13, 14, 32]
+    #13 new sol:25
+    #player_color = 'white'
+    #black = [5, 13, 14, 32, 33]
+    #white = [23, 26, 31, 34]
     #21 sol:29
     #player_color = 'white'
     #black = [12, 24, 25, 31, 33, 8]
@@ -129,6 +129,10 @@ if __name__ == '__main__':
     #player_color = 'black'
     #black = [15, 20, 21, 22, 24, 32, 18, 35]
     #white = [5, 6, 13, 14, 19, 23, 25, 34]
+    #55 new sol:2
+    player_color = 'white'
+    black = [5, 6, 13, 14, 19, 23, 25, 34]
+    white = [15, 20, 21, 22, 24, 32, 18]
     #49 sol: 15
     #player_color = 'white'  # white | black
     #black = [2, 3, 8, 13, 21, 25, 30]
@@ -141,14 +145,18 @@ if __name__ == '__main__':
     #player_color = 'black'  # white | black
     #black = [3, 5,11, 13, 16, 17, 21, 34]
     #white = [2, 10, 14, 15, 22, 25, 29, 28]
+    #44 new sol:6!
+    #player_color = 'black'
+    #black = [3, 5, 9, 13, 16, 17, 21, 34]
+    #white = [0, 2, 14, 15, 22, 25, 29, 28]
     #51 sol:27
     #player_color = 'black'
     #black = [12, 14, 16, 18, 21, 29, 30, 33, 5]
     #white = [1, 3, 8, 11, 13, 23, 31, 35, 6]
     #52 sol:33
-    player_color = 'black'
-    black = [3, 13, 15, 17, 20, 26, 29, 30, 10, 8]
-    white = [1, 2, 4, 7, 12, 28, 31, 34, 0, 35]
+    #player_color = 'black'
+    #black = [3, 13, 15, 17, 20, 26, 29, 30, 10, 8]
+    #white = [1, 2, 4, 7, 12, 28, 31, 34, 0, 35]
     max_depth = 18 - len(black)
 
     pattern_book = load_pattern_book()

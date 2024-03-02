@@ -12,8 +12,8 @@ export function get_puzzle_board(i){
             white = [3, 14, 15, 24];
             break
         case 13:
-            black = [23, 26, 31, 34];
-            white = [5, 13, 14, 32];
+            black = [5, 13, 14, 32, 33];
+            white = [23, 26, 31, 34];
             break;
         case 21:
             black = [12, 24, 25, 31, 33, 8];
@@ -38,8 +38,8 @@ export function get_puzzle_board(i){
             break;
         //level 3:
         case 55:
-            black = [15, 20, 21, 22, 24, 32, 18, 35];
-            white = [5, 6, 13, 14, 19, 23, 25, 34];
+            black = [5, 6, 13, 14, 19, 23, 25, 34];
+            white = [15, 20, 21, 22, 24, 32, 18];
             break;
         case 49:
             black = [2, 3, 8, 13, 21, 25, 30];
@@ -47,16 +47,16 @@ export function get_puzzle_board(i){
             break;
         //level 4:
         case 44:
-            black = [3, 5,11, 13, 16, 17, 21, 34];
-            white = [2, 10, 14, 15, 22, 25, 29, 28];
+            black = [3, 5, 9, 13, 16, 17, 21, 34];
+            white = [0, 2, 14, 15, 22, 25, 29, 28];
             break;
         case 46:
             black = [6, 11, 13, 21, 23];
             white = [3, 4, 12,14,22];
             break;
         case 51:
-            black = [12, 14, 16, 18, 21, 29, 30, 33, 5];
-            white = [1, 3, 8, 11, 13, 23, 31, 35, 6];
+            black = [1, 3, 8, 11, 13, 23, 31, 35, 6];
+            white = [12, 14, 16, 18, 21, 29, 30, 33];
             break;
         case 52:
             black = [3, 13, 15, 17, 20, 26, 29, 30, 10, 8];

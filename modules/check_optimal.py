@@ -379,8 +379,8 @@ def search_one_step(player_color, black, white, ori_black_features, ori_white_fe
 
 if __name__ == '__main__':
     # prepare_legal_patterns()
-    black = [3, 13, 15, 17, 20, 26, 29, 30, 10, 8]
-    white = [1, 2, 4, 7, 12, 28, 31, 34, 0, 35]
+    black = [5, 6, 13, 14, 19, 23, 25, 34]
+    white = [15, 20, 21, 22, 24, 32, 18]
     pattern_book = load_pattern_book()
     black_features, white_features = init_board(black, white, pattern_book)
     all_paths = search_one_step('white', black, white, black_features, white_features, pattern_book, 0, 6, [])
