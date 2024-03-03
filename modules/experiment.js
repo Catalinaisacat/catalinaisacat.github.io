@@ -556,7 +556,7 @@ export function create_timeline(timeline){
     var preload = {
         type: jsPsychPreload,
         images: images,
-        audio: audio 
+        audio: audio
     }
 
     var set_participant_id = {
@@ -804,6 +804,36 @@ export function create_timeline(timeline){
             allow_keys: false,
             button_label_next: 'Yes. I am ready',
             allow_backward: false
+        }
+    }
+
+    var finish_free_play = {
+        type: jsPsychInstructions,
+        pages: [
+            '<p> You finished the first stage! Please leave this testing room and inform the experimenter.<br/><br/><br/></p>'
+        ],
+        show_clickable_nav: true,
+        view_duration: 1000,
+        allow_keys: false,
+        button_label_next: 'Next',
+        allow_backward: false,
+        on_load: () => {
+            bonus = freeplay_bonus + puzzle_bonus
+            save_last_timestamp_data();
+            uploadcsv(1,"all_freeplay",-1,freeplay_results, false);
+            zip.generateAsync({
+                type: 'blob'
+            }).then(function(content) {
+                var a = document.createElement('a');
+                a.download = pid + '_freeplay.zip';
+                a.style.display = 'none';
+                a.href = URL.createObjectURL(content);
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+            zip = new JSZip();
+            save_first_timestamp_data()
         }
     }
 
@@ -1391,7 +1421,7 @@ export function create_timeline(timeline){
                 type: 'blob'
             }).then(function(content) {
                 var a = document.createElement('a');
-                a.download = pid + '.zip';
+                a.download = pid + '_puzzle.zip';
                 a.style.display = 'none';
                 a.href = URL.createObjectURL(content);
                 document.body.appendChild(a);
@@ -1411,7 +1441,7 @@ export function create_timeline(timeline){
     // Add trials to timeline 
     timeline.push(preload);
     //timeline.push(set_participant_id);
-    //timeline.push(enter_fullscreen);
+    timeline.push(enter_fullscreen);
     //timeline.push(consent_form);
     //timeline.push(demographic_survey);
     // timeline.push(ynode(`
@@ -1459,7 +1489,7 @@ export function create_timeline(timeline){
     // timeline.push(after_practice_free_play);
     let color = 0;
     // // TODO: 8 -> 40
-    for(let i=0; i<8; i++){
+    for(let i=0; i<2; i++){
         timeline.push(ready_check_free_play((i + 1).toString()))
         color = (color+1) % 2;
         timeline.push({
@@ -1471,13 +1501,8 @@ export function create_timeline(timeline){
             free_play: true,
         })
     }
-    // timeline.push(ynode(`
-    //     <p>
-    //         You finished the first stage! Please leave this testing room and inform the experimenter.<br/>
-    //         <br/><br/>
-    //     </p>
-    // `))
-    // timeline.push(password_page);
+    timeline.push(finish_free_play);
+    timeline.push(password_page);
     // timeline.push(thinkaloud_comprehension);
     // timeline.push(free_conversation_record);
     // timeline.push(planning_comprehension);
@@ -1487,143 +1512,143 @@ export function create_timeline(timeline){
 //             <br/><br/>
 //         </p>
 //     `))
-//     timeline.push(ynode(`
-//         <p>
-//             Practice puzzle 1
-//             <br/><br/>
-//         </p>
-//     `))
-//     timeline.push(
-//         {
-//             type: jsPsychFourInARow,
-//             pieces: get_puzzle_board(order[0]),
-//             free_play: false,
-//             initial_delay: 0,//10000 + Math.round(20000*Math.random()),
-//             tree: get_puzzle_tree(order[0]),
-//             get_level: () =>{0},
-//             game_index: 1,
-//             length: Math.floor((order[0]-1)/10) + 2,
-//             puzzle: order[0],
-//             time_per_move: 5000,
-//             tutorial: true,
-//             on_load: ()=>{recorder.start();},
-//             on_finish: save_puzzle_data
-//         }
-//     )
-//     timeline.push({
-//         type: jsPsychSurveyLikert,
-//         questions: [
-//             {
-//                 prompt: "<b>How difficult or easy did you find this puzzle?</b>",
-//                 name: 'difficulty',
-//                 labels: ["1</br>very easy","2","3","4","5","6","7</br>very difficult"],
-//                 required: true
-//             },
-//             {
-//                 prompt: "<b>How confident are you that your move was the best move?</b>",
-//                 name: 'confidence',
-//                 labels: ["1</br>very unsure","2","3","4","5","6","7</br>very confident"],
-//                 required: true
-//             }
-//         ],
-//         button_label: 'Submit',
-//         on_finish: (data) => {
-//             let difficulty = data.response.difficulty+1;
-//             let confidence = data.response.confidence+1;
-//             puzzles_results[current_trail]['self-reported difficulty'] = difficulty;
-//             puzzles_results[current_trail]['confidence'] = confidence;
-//         },
-//     })
-//     timeline.push(ynode(`
-//         <p>
-//             Practice puzzle 2
-//             <br/><br/>
-//         </p>
-//     `))
-//     timeline.push(
-//         {
-//             type: jsPsychFourInARow,
-//             pieces: get_puzzle_board(order[1]),
-//             free_play: false,
-//             initial_delay: 0,//10000 + Math.round(20000*Math.random()),
-//             tree: get_puzzle_tree(order[1]),
-//             get_level: () =>{0},
-//             game_index: 2,
-//             length: Math.floor((order[1]-1)/10) + 2,
-//             puzzle: order[1],
-//             time_per_move: 5000,
-//             tutorial: true,
-//             on_load: ()=>{recorder.start();},
-//             on_finish: save_puzzle_data
-//         }
-//     )
-//     timeline.push({
-//         type: jsPsychSurveyLikert,
-//         questions: [
-//             {
-//                 prompt: "<b>How difficult or easy did you find this puzzle?</b>",
-//                 name: 'difficulty',
-//                 labels: ["1</br>very easy","2","3","4","5","6","7</br>very difficult"],
-//                 required: true
-//             },
-//             {
-//                 prompt: "<b>How confident are you that your move was the best move?</b>",
-//                 name: 'confidence',
-//                 labels: ["1</br>very unsure","2","3","4","5","6","7</br>very confident"],
-//                 required: true
-//             }
-//         ],
-//         button_label: 'Submit',
-//         on_finish: (data) => {
-//             let difficulty = data.response.difficulty+1;
-//             let confidence = data.response.confidence+1;
-//             puzzles_results[current_trail]['self-reported difficulty'] = difficulty;
-//             puzzles_results[current_trail]['confidence'] = confidence;
-//         },
-//     })
+    timeline.push(ynode(`
+        <p>
+            Practice puzzle 1
+            <br/><br/>
+        </p>
+    `))
+    timeline.push(
+        {
+            type: jsPsychFourInARow,
+            pieces: get_puzzle_board(order[0]),
+            free_play: false,
+            initial_delay: 0,//10000 + Math.round(20000*Math.random()),
+            tree: get_puzzle_tree(order[0]),
+            get_level: () =>{0},
+            game_index: 1,
+            length: Math.floor((order[0]-1)/10) + 2,
+            puzzle: order[0],
+            time_per_move: 5000,
+            tutorial: true,
+            on_load: ()=>{recorder.start();},
+            on_finish: save_puzzle_data
+        }
+    )
+    timeline.push({
+        type: jsPsychSurveyLikert,
+        questions: [
+            {
+                prompt: "<b>How difficult or easy did you find this puzzle?</b>",
+                name: 'difficulty',
+                labels: ["1</br>very easy","2","3","4","5","6","7</br>very difficult"],
+                required: true
+            },
+            {
+                prompt: "<b>How confident are you that your move was the best move?</b>",
+                name: 'confidence',
+                labels: ["1</br>very unsure","2","3","4","5","6","7</br>very confident"],
+                required: true
+            }
+        ],
+        button_label: 'Submit',
+        on_finish: (data) => {
+            let difficulty = data.response.difficulty+1;
+            let confidence = data.response.confidence+1;
+            puzzles_results[current_trail]['self-reported difficulty'] = difficulty;
+            puzzles_results[current_trail]['confidence'] = confidence;
+        },
+    })
+    timeline.push(ynode(`
+        <p>
+            Practice puzzle 2
+            <br/><br/>
+        </p>
+    `))
+    timeline.push(
+        {
+            type: jsPsychFourInARow,
+            pieces: get_puzzle_board(order[1]),
+            free_play: false,
+            initial_delay: 0,//10000 + Math.round(20000*Math.random()),
+            tree: get_puzzle_tree(order[1]),
+            get_level: () =>{0},
+            game_index: 2,
+            length: Math.floor((order[1]-1)/10) + 2,
+            puzzle: order[1],
+            time_per_move: 5000,
+            tutorial: true,
+            on_load: ()=>{recorder.start();},
+            on_finish: save_puzzle_data
+        }
+    )
+    timeline.push({
+        type: jsPsychSurveyLikert,
+        questions: [
+            {
+                prompt: "<b>How difficult or easy did you find this puzzle?</b>",
+                name: 'difficulty',
+                labels: ["1</br>very easy","2","3","4","5","6","7</br>very difficult"],
+                required: true
+            },
+            {
+                prompt: "<b>How confident are you that your move was the best move?</b>",
+                name: 'confidence',
+                labels: ["1</br>very unsure","2","3","4","5","6","7</br>very confident"],
+                required: true
+            }
+        ],
+        button_label: 'Submit',
+        on_finish: (data) => {
+            let difficulty = data.response.difficulty+1;
+            let confidence = data.response.confidence+1;
+            puzzles_results[current_trail]['self-reported difficulty'] = difficulty;
+            puzzles_results[current_trail]['confidence'] = confidence;
+        },
+    })
 //     timeline.push(after_practice);
 //     // TODO: 4 -> 12
-//     let N = 12;
-//     for(let i=2; i<N; i++){
-//         timeline.push(ready_check_planning((i - 1).toString()))
-//         timeline.push({
-//             type: jsPsychFourInARow,
-//             pieces: get_puzzle_board(order[i]),
-//             free_play: false,
-//             initial_delay: 0,//10000 + Math.round(20000*Math.random()),
-//             tree: get_puzzle_tree(order[i]),
-//             get_level: () =>{0},
-//             game_index: i+1,
-//             length: Math.floor((order[i]-1)/10) + 2,
-//             puzzle: order[i],
-//             time_per_move: 5000,
-//             on_load: ()=>{recorder.start();},
-//             on_finish: save_puzzle_data
-//         })
-//         timeline.push({
-//             type: jsPsychSurveyLikert,
-//             questions: [
-//                 {
-//                     prompt: "<b>How difficult or easy did you find this puzzle?</b>",
-//                     name: 'difficulty',
-//                     labels: ["1</br>very easy","2","3","4","5","6","7</br>very difficult"],
-//                     required: true
-//                 },
-//                 {
-//                     prompt: "<b>How confident are you that your move was the best move?</b>",
-//                     name: 'confidence',
-//                     labels: ["1</br>very unsure","2","3","4","5","6","7</br>very confident"],
-//                     required: true
-//                 }
-//             ],
-//             button_label: 'Submit',
-//             on_finish: (data) => {
-//                 let difficulty = data.response.difficulty+1;
-//                 let confidence = data.response.confidence+1;
-//                 puzzles_results[current_trail]['self-reported difficulty'] = difficulty;
-//                 puzzles_results[current_trail]['confidence'] = confidence;
-//             },
-//         })
-//     }
+    let N = 4;
+    for(let i=2; i<N; i++){
+        timeline.push(ready_check_planning((i - 1).toString()))
+        timeline.push({
+            type: jsPsychFourInARow,
+            pieces: get_puzzle_board(order[i]),
+            free_play: false,
+            initial_delay: 0,//10000 + Math.round(20000*Math.random()),
+            tree: get_puzzle_tree(order[i]),
+            get_level: () =>{0},
+            game_index: i+1,
+            length: Math.floor((order[i]-1)/10) + 2,
+            puzzle: order[i],
+            time_per_move: 5000,
+            on_load: ()=>{recorder.start();},
+            on_finish: save_puzzle_data
+        })
+        timeline.push({
+            type: jsPsychSurveyLikert,
+            questions: [
+                {
+                    prompt: "<b>How difficult or easy did you find this puzzle?</b>",
+                    name: 'difficulty',
+                    labels: ["1</br>very easy","2","3","4","5","6","7</br>very difficult"],
+                    required: true
+                },
+                {
+                    prompt: "<b>How confident are you that your move was the best move?</b>",
+                    name: 'confidence',
+                    labels: ["1</br>very unsure","2","3","4","5","6","7</br>very confident"],
+                    required: true
+                }
+            ],
+            button_label: 'Submit',
+            on_finish: (data) => {
+                let difficulty = data.response.difficulty+1;
+                let confidence = data.response.confidence+1;
+                puzzles_results[current_trail]['self-reported difficulty'] = difficulty;
+                puzzles_results[current_trail]['confidence'] = confidence;
+            },
+        })
+    }
     timeline.push(submit_block);
  }
