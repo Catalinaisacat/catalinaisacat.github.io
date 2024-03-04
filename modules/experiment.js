@@ -1399,7 +1399,7 @@ export function create_timeline(timeline){
             console.log(bonus)
             save_last_timestamp_data();
             uploadcsv(1,"all_puzzles",-1,puzzles_results, true);
-            uploadcsv(1,"all_freeplay",-1,freeplay_results, false);
+            // uploadcsv(1,"all_freeplay",-1,freeplay_results, false);
             //jsPsych.data.displayData();
             recorder.start();
             recorder.stop();
@@ -1433,9 +1433,9 @@ export function create_timeline(timeline){
     // -------------------------------------------------- MAIN ---------------------------------------------------------
 
     //set puzzles
-    const practicetrial = shuffle([13, 45]);
+    const practicetrial = shuffle(["K", "L"]);
     //const practicetrial = shuffle([1, 0]);
-    const officialtrial = shuffle([21, 48, 34, 53, 55, 49, 44, 46, 51, 52]);
+    const officialtrial = shuffle(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]);
     let order = practicetrial.concat(officialtrial);
     
     // Add trials to timeline 
@@ -1457,52 +1457,52 @@ export function create_timeline(timeline){
     //         <br/><br/>
     //     </p>
     // `))
-    timeline.push(ynode(`
-        <p>
-            Practice game 1
-            <br/><br/>
-        </p>
-    `))
-    timeline.push({
-        type: jsPsychFourInARowFreePlay,
-        game_index: 1,
-        tutorial: true,
-        get_level: () => 0,
-        on_load: () => {free_play_tutorial_try += 1;},
-        on_finish: save_freeplay_practice,
-        player: 1
-    })
-    timeline.push(ynode(`
-        <p>
-            Practice game 2
-            <br/><br/>
-        </p>
-    `))
-    timeline.push({
-        type: jsPsychFourInARowFreePlay,
-        game_index: 2,
-        tutorial: true,
-        get_level: () => 0,
-        on_finish: save_freeplay_practice,
-        player: 0
-    })
-    // timeline.push(after_practice_free_play);
-    let color = 0;
-    // // TODO: 8 -> 40
-    for(let i=0; i<2; i++){
-        timeline.push(ready_check_free_play((i + 1).toString()))
-        color = (color+1) % 2;
-        timeline.push({
-            type: jsPsychFourInARowFreePlay,
-            game_index: i+1,
-            get_level: get_level,
-            on_finish: () => {save_free_play_data(i)},
-            player: color,
-            free_play: true,
-        })
-    }
-    timeline.push(finish_free_play);
-    timeline.push(password_page);
+    // timeline.push(ynode(`
+    //     <p>
+    //         Practice game 1
+    //         <br/><br/>
+    //     </p>
+    // `))
+    // timeline.push({
+    //     type: jsPsychFourInARowFreePlay,
+    //     game_index: 1,
+    //     tutorial: true,
+    //     get_level: () => 0,
+    //     on_load: () => {free_play_tutorial_try += 1;},
+    //     on_finish: save_freeplay_practice,
+    //     player: 1
+    // })
+    // timeline.push(ynode(`
+    //     <p>
+    //         Practice game 2
+    //         <br/><br/>
+    //     </p>
+    // `))
+    // timeline.push({
+    //     type: jsPsychFourInARowFreePlay,
+    //     game_index: 2,
+    //     tutorial: true,
+    //     get_level: () => 0,
+    //     on_finish: save_freeplay_practice,
+    //     player: 0
+    // })
+    // // timeline.push(after_practice_free_play);
+    // let color = 0;
+    // // // TODO: 8 -> 40
+    // for(let i=0; i<2; i++){
+    //     timeline.push(ready_check_free_play((i + 1).toString()))
+    //     color = (color+1) % 2;
+    //     timeline.push({
+    //         type: jsPsychFourInARowFreePlay,
+    //         game_index: i+1,
+    //         get_level: get_level,
+    //         on_finish: () => {save_free_play_data(i)},
+    //         player: color,
+    //         free_play: true,
+    //     })
+    // }
+    // timeline.push(finish_free_play);
+    // timeline.push(password_page);
     // timeline.push(thinkaloud_comprehension);
     // timeline.push(free_conversation_record);
     // timeline.push(planning_comprehension);
@@ -1608,7 +1608,7 @@ export function create_timeline(timeline){
     })
 //     timeline.push(after_practice);
 //     // TODO: 4 -> 12
-    let N = 4;
+    let N = 12;
     for(let i=2; i<N; i++){
         timeline.push(ready_check_planning((i - 1).toString()))
         timeline.push({
