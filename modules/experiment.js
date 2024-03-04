@@ -369,65 +369,129 @@ export function save_free_play_data(tid){
     for(var i = 0; i < data.all_move_RT.length; i++){
         rd_all_move_RT.push((data.all_move_RT[i] / 1000).toFixed(1))
     }
-   
-    freeplay_results.push({
-        "event_type": "start game",
-        "event_time": date.toLocaleString().replace(', ', '-'),
-        "reaction_time": " ",
-        "pid": pid,
-        "tid": tid,
-        "is_practice": "FALSE",
-        "level": " ",
-        "user_color": " ",
-        "user_move": " ",
-        "opponent_move": " ",
-        "result": " "
-    });
+    
+
     //freeplay_results.push(["event_type","event_time","pid","is_practice","level","user_color","user_move","opponent_move","result"])
-    for(let i=0; i<data.solution.length; i++){
-        if(data.player_move[i]!=-1){
-            freeplay_results.push({
-                "event_type": "user move",
-                "event_time": date.toLocaleString().replace(', ', '-'),
-                "reaction_time": rd_all_move_RT[Math.floor(i/2)],
-                "pid": pid,
-                "tid": tid,
-                "is_practice": "FALSE",
-                "level": data.level,
-                "user_color": data.player_color,
-                "user_move": data.player_move[i],
-                "opponent_move": " ",
-                "result": " "
-            });
-        }else{
-            freeplay_results.push({
-                "event_type": "opponent move",
-                "event_time": date.toLocaleString().replace(', ', '-'),
-                "reaction_time": " ",
-                "pid": pid,
-                "tid": tid,
-                "is_practice": "FALSE",
-                "level": data.level,
-                "user_color": data.player_color,
-                "user_move": " ",
-                "opponent_move": data.ai_move[i],
-                "result": " "
-            });
+    
+
+    if(data.game_index<=1){
+        freeplay_results.push({
+            "event_type": "start game",
+            "event_time": date.toLocaleString().replace(', ', '-'),
+            "reaction_time": " ",
+            "pid": pid,
+            "tid": tid,
+            "is_practice": "TRUE",
+            "level": " ",
+            "user_color": " ",
+            "user_move": " ",
+            "opponent_move": " ",
+            "result": " "
+        });
+        for(let i=0; i<data.solution.length; i++){
+            if(data.player_move[i]!=-1){
+                freeplay_results.push({
+                    "event_type": "user move",
+                    "event_time": date.toLocaleString().replace(', ', '-'),
+                    "reaction_time": rd_all_move_RT[Math.floor(i/2)],
+                    "pid": pid,
+                    "tid": tid,
+                    "is_practice": "TRUE",
+                    "level": data.level,
+                    "user_color": data.player_color,
+                    "user_move": data.player_move[i],
+                    "opponent_move": " ",
+                    "result": " "
+                });
+            }else{
+                freeplay_results.push({
+                    "event_type": "opponent move",
+                    "event_time": date.toLocaleString().replace(', ', '-'),
+                    "reaction_time": " ",
+                    "pid": pid,
+                    "tid": tid,
+                    "is_practice": "TRUE",
+                    "level": data.level,
+                    "user_color": data.player_color,
+                    "user_move": " ",
+                    "opponent_move": data.ai_move[i],
+                    "result": " "
+                });
+            }
         }
+        freeplay_results.push({
+            "event_type": "end game",
+            "event_time": date.toLocaleString().replace(', ', '-'),
+            "reaction_time": " ",
+            "pid": pid,
+            "tid": tid,
+            "is_practice": "TRUE",
+            "level": data.level,
+            "user_color": " ",
+            "user_move": " ",
+            "opponent_move": " ",
+            "result": data.result
+        });
+    }else{
+        freeplay_results.push({
+            "event_type": "start game",
+            "event_time": date.toLocaleString().replace(', ', '-'),
+            "reaction_time": " ",
+            "pid": pid,
+            "tid": tid,
+            "is_practice": "FALSE",
+            "level": " ",
+            "user_color": " ",
+            "user_move": " ",
+            "opponent_move": " ",
+            "result": " "
+        });
+        for(let i=0; i<data.solution.length; i++){
+            if(data.player_move[i]!=-1){
+                freeplay_results.push({
+                    "event_type": "user move",
+                    "event_time": date.toLocaleString().replace(', ', '-'),
+                    "reaction_time": rd_all_move_RT[Math.floor(i/2)],
+                    "pid": pid,
+                    "tid": tid,
+                    "is_practice": "FALSE",
+                    "level": data.level,
+                    "user_color": data.player_color,
+                    "user_move": data.player_move[i],
+                    "opponent_move": " ",
+                    "result": " "
+                });
+            }else{
+                freeplay_results.push({
+                    "event_type": "opponent move",
+                    "event_time": date.toLocaleString().replace(', ', '-'),
+                    "reaction_time": " ",
+                    "pid": pid,
+                    "tid": tid,
+                    "is_practice": "FALSE",
+                    "level": data.level,
+                    "user_color": data.player_color,
+                    "user_move": " ",
+                    "opponent_move": data.ai_move[i],
+                    "result": " "
+                });
+            }
+        }
+        freeplay_results.push({
+            "event_type": "end game",
+            "event_time": date.toLocaleString().replace(', ', '-'),
+            "reaction_time": " ",
+            "pid": pid,
+            "tid": tid,
+            "is_practice": "FALSE",
+            "level": data.level,
+            "user_color": " ",
+            "user_move": " ",
+            "opponent_move": " ",
+            "result": data.result
+        });
     }
-    freeplay_results.push({
-        "event_type": "end game",
-        "event_time": date.toLocaleString().replace(', ', '-'),
-        "reaction_time": " ",
-        "pid": pid,
-        "tid": tid,
-        "is_practice": "FALSE",
-        "level": data.level,
-        "user_color": " ",
-        "user_move": " ",
-        "opponent_move": " ",
-        "result": data.result
-    });
+    
     //uploadData(config.id, "free_play", data.game_index, result)
 }
 
@@ -454,23 +518,23 @@ export function save_freeplay_instruction_data(){
     uploadData(config.id, "instructions", "free_play", data.view_history)
 }
 
-export function save_freeplay_practice(){
-    let data = jsPsych.data.getLastTrialData().trials[0]
-    var date = new Date();
-    let result = {
-        date: date.toLocaleString(),
-        solution: data.solution,
-        level: data.level,
-        player_color: data.player_color,
-        result: data.result,
-        first_move_RT: data.first_move_RT,
-        duration: data.duration,
-        all_move_RT: data.all_move_RT,
-        all_move_times: data.all_move_times,
-        mouse_movements: data.mouse_movements,
-    };
-    uploadData(config.id, "practice", "free_play_"+100*free_play_tutorial_try+data.game_index, result)
-}
+// export function save_freeplay_practice(){
+//     let data = jsPsych.data.getLastTrialData().trials[0]
+//     var date = new Date();
+//     let result = {
+//         date: date.toLocaleString(),
+//         solution: data.solution,
+//         level: data.level,
+//         player_color: data.player_color,
+//         result: data.result,
+//         first_move_RT: data.first_move_RT,
+//         duration: data.duration,
+//         all_move_RT: data.all_move_RT,
+//         all_move_times: data.all_move_times,
+//         mouse_movements: data.mouse_movements,
+//     };
+//     uploadData(config.id, "practice", "free_play_"+100*free_play_tutorial_try+data.game_index, result)
+// }
 
 export function save_puzzle_practice(){
     let data = jsPsych.data.getLastTrialData().trials[0]
@@ -870,7 +934,7 @@ export function create_timeline(timeline){
 
             "<p align='left'>Please <b>AVOID:</b> <br/><br/>" +
             "<ul>"+
-	        "   <li align='left'> Describe or explain your thoughts</li><br/>"+
+	        "   <li align='left'> Explain your thoughts</li><br/>"+
 	        "   <li align='left'> Keeping thoughts to yourself, for example, <br/><br/>" +
             "because you think they are irrelevant or incorrect</li><br/><br/>" +
             "</ul></p>",
@@ -1127,7 +1191,7 @@ export function create_timeline(timeline){
                     "If I want to talk about two adjacent pieces on the board, I should touch them one by one.",
                     "I should provide clear explanation of why my chosen move is the best move."
                 ],
-                desc: "You should avoid describing and explaining your thoughts. <br/><br/>Instead, you should say everything that goes through your mind.",
+                desc: "You should avoid explaining your thoughts. <br/><br/>Instead, you should say everything that goes through your mind.",
                 answer: 2
             },
             {
@@ -1465,12 +1529,13 @@ export function create_timeline(timeline){
     `))
     timeline.push({
         type: jsPsychFourInARowFreePlay,
-        game_index: 1,
+        game_index: 0,
         tutorial: true,
         get_level: () => 0,
         on_load: () => {free_play_tutorial_try += 1;},
-        on_finish: save_freeplay_practice,
-        player: 1
+        on_finish:  () => {save_free_play_data(0)},
+        player: 1,
+        free_play: true,
     })
     timeline.push(ynode(`
         <p>
@@ -1480,17 +1545,18 @@ export function create_timeline(timeline){
     `))
     timeline.push({
         type: jsPsychFourInARowFreePlay,
-        game_index: 2,
+        game_index: 1,
         tutorial: true,
         get_level: () => 0,
-        on_finish: save_freeplay_practice,
-        player: 0
+        on_finish:  () => {save_free_play_data(1)},
+        player: 0,
+        free_play: true
     })
-    // timeline.push(after_practice_free_play);
+    timeline.push(after_practice_free_play);
     let color = 0;
-    // // TODO: 20 -> 40
-    for(let i=0; i<20; i++){
-        timeline.push(ready_check_free_play((i + 1).toString()))
+    // // TODO: 12 -> 42
+    for(let i=2; i<42; i++){
+        timeline.push(ready_check_free_play((i-1).toString()))
         color = (color+1) % 2;
         timeline.push({
             type: jsPsychFourInARowFreePlay,
