@@ -962,7 +962,7 @@ export function create_timeline(timeline){
             "If you remain silent for a long period, we will show a 'Keep Talking' sign as a reminder to verbalize all your thoughts.<br/><br/>"+
             '<img width="600" height="auto" src="media/keeptalking.png"></img><br/><br/>',
 
-            "Here is a summary:<br/><br/>"+
+            "<h3>Here is a summary:</h3><br/>"+
             '<img width="1000" height="auto" src="media/summary.png"></img><br/><br/>',
         ],
         show_clickable_nav: true,
@@ -1238,7 +1238,7 @@ export function create_timeline(timeline){
         type: jsPsychInstructions,
         pages: [
             'Practice ends! Any questions?<br/><br/>',
-            'This is a summary of the instructions.<br/><br/>' +
+            '<h3>This is a summary of the instructions.<br/></h3>' +
             '<img width=\'1000\' height=\'auto\' src=\'media/summary2.png\'></img>',
             
             'Now we enter the official puzzles.<br/><br/>'+
@@ -1310,7 +1310,7 @@ export function create_timeline(timeline){
         'There are 30 puzzles in total. As before, we will do two practice rounds first.',
         ],
         show_clickable_nav: true,
-        view_duration: 2000,
+        view_duration: 1000,
         allow_keys: false,
         on_finish: save_puzzle_instruction_data
     }
@@ -1433,7 +1433,7 @@ export function create_timeline(timeline){
         "it is best to <b>plan out what you will do at the start of the puzzle</b>.<br/><br/>",
         ],
         show_clickable_nav: true,
-        view_duration: 2000,
+        view_duration: 1000,
         allow_keys: false,
         button_label_next: "Next"
     }
@@ -1511,7 +1511,6 @@ export function create_timeline(timeline){
 
     //set puzzles
     const practicetrial = shuffle(["K", "L"]);
-    //const practicetrial = shuffle([1, 0]);
     const officialtrial = shuffle(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]);
     let order = practicetrial.concat(officialtrial);
     
@@ -1594,7 +1593,7 @@ export function create_timeline(timeline){
     `))
     timeline.push(ynode(`
         <p>
-            Practice puzzle 1
+            <h2>Practice puzzle 1</h2>
             <br/><br/>
         </p>
     `))
@@ -1641,7 +1640,7 @@ export function create_timeline(timeline){
     })
     timeline.push(ynode(`
         <p>
-            Practice puzzle 2
+        <h2>Practice puzzle 2</h2>
             <br/><br/>
         </p>
     `))
@@ -1686,7 +1685,7 @@ export function create_timeline(timeline){
             puzzles_results[current_trail]['confidence'] = confidence;
         },
     })
-//     timeline.push(after_practice);
+    timeline.push(after_practice);
 //     // TODO: 4 -> 12
     let N = 12;
     for(let i=2; i<N; i++){
