@@ -39,7 +39,6 @@ export var freeplay_results = [{
     "pid": "pid",
     "tid": "tid",
     "is_practice": "is_practice",
-    "category":"ai_category",
     "level": "level",
     "user_color": "user_color",
     "user_move": "user_move",
@@ -387,7 +386,6 @@ export function save_free_play_data(tid){
             "pid": pid,
             "tid": tid,
             "is_practice": "TRUE",
-            "category":" ",
             "level": " ",
             "user_color": " ",
             "user_move": " ",
@@ -403,7 +401,6 @@ export function save_free_play_data(tid){
                     "pid": pid,
                     "tid": tid,
                     "is_practice": "TRUE",
-                    "category":ai_category,
                     "level": data.level,
                     "user_color": data.player_color,
                     "user_move": data.player_move[i],
@@ -418,7 +415,6 @@ export function save_free_play_data(tid){
                     "pid": pid,
                     "tid": tid,
                     "is_practice": "TRUE",
-                    "category":ai_category,
                     "level": data.level,
                     "user_color": data.player_color,
                     "user_move": " ",
@@ -434,7 +430,6 @@ export function save_free_play_data(tid){
             "pid": pid,
             "tid": tid,
             "is_practice": "TRUE",
-            "category":ai_category,
             "level": data.level,
             "user_color": " ",
             "user_move": " ",
@@ -449,7 +444,6 @@ export function save_free_play_data(tid){
             "pid": pid,
             "tid": tid,
             "is_practice": "FALSE",
-            "category":" ",
             "level": " ",
             "user_color": " ",
             "user_move": " ",
@@ -465,7 +459,6 @@ export function save_free_play_data(tid){
                     "pid": pid,
                     "tid": tid,
                     "is_practice": "FALSE",
-                    "category":ai_category,
                     "level": data.level,
                     "user_color": data.player_color,
                     "user_move": data.player_move[i],
@@ -480,7 +473,6 @@ export function save_free_play_data(tid){
                     "pid": pid,
                     "tid": tid,
                     "is_practice": "FALSE",
-                    "category":ai_category,
                     "level": data.level,
                     "user_color": data.player_color,
                     "user_move": " ",
@@ -496,7 +488,6 @@ export function save_free_play_data(tid){
             "pid": pid,
             "tid": tid,
             "is_practice": "FALSE",
-            "category":ai_category,
             "level": data.level,
             "user_color": " ",
             "user_move": " ",
@@ -1567,7 +1558,7 @@ export function create_timeline(timeline){
     timeline.push(after_practice_free_play);
     let color = 0;
     let ai_category = 2;
-    // // TODO: 12 -> 42
+    // // freeplay 42
     for(let i=2; i<42; i++){
         timeline.push(ready_check_free_play((i-1).toString()))
         color = (color+1) % 2;
@@ -1686,7 +1677,7 @@ export function create_timeline(timeline){
         },
     })
     timeline.push(after_practice);
-//     // TODO: 4 -> 12
+//     // puzzle:12
     let N = 12;
     for(let i=2; i<N; i++){
         timeline.push(ready_check_planning((i - 1).toString()))
