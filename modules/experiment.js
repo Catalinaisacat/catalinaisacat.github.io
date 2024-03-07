@@ -11,7 +11,8 @@ export var puzzle_bonus = 0;
 export var freeplay_bonus = 0;
 export var level = 2;
 export var ai_category = 2;
-export var last_result = "win"
+export var last_result = "win";
+//export var result = "win";
 export var current_trail = 0;
 export var free_play_tutorial_try = 0;
 export var puzzles_tutorial_try = 0;
@@ -38,6 +39,7 @@ export var freeplay_results = [{
     "pid": "pid",
     "tid": "tid",
     "is_practice": "is_practice",
+    "category":"ai_category",
     "level": "level",
     "user_color": "user_color",
     "user_move": "user_move",
@@ -335,21 +337,24 @@ export function save_free_play_data(tid){
             freeplay_results[data.game_index] = result;
         })
     } else {
-        if (data.result == 'win'){
-            freeplay_bonus += 0.2;
-            if(last_result == 'win'){
-                ai_category = Math.min(ai_category + 1, 5)
+        if (data.game_index>=2){
+            if (data.result == 'win'){
+                freeplay_bonus += 0.2;
+                //ai_category = Math.min(ai_category + 1, 5)
+                if(last_result == 'win'){
+                    ai_category = Math.min(ai_category + 1, 5)
+                }
+                // level = Math.min(199, level + 10);
+            } else if (data.result == 'tie'){
+                freeplay_bonus += 0.1;
+                // level = Math.max(0, level - 10);
+            } else {
+                // level = Math.max(0, level - 10);
+                ai_category = Math.max(ai_category - 1, 1)
             }
-            // level = Math.min(199, level + 10);
-        } else if (data.result == 'tie'){
-            freeplay_bonus += 0.1;
-            // level = Math.max(0, level - 10);
-        } else {
-            // level = Math.max(0, level - 10);
-            ai_category = Math.max(ai_category - 1, 1)
+            last_result = data.result
+            level = (ai_category - 1) * 40 + Math.floor(Math.random() * 40)
         }
-        last_result = data.result
-        level = (ai_category - 1) * 40 + Math.floor(Math.random() * 40)
     }
     var date = new Date();
     let result = {
@@ -382,6 +387,7 @@ export function save_free_play_data(tid){
             "pid": pid,
             "tid": tid,
             "is_practice": "TRUE",
+            "category":" ",
             "level": " ",
             "user_color": " ",
             "user_move": " ",
@@ -397,6 +403,7 @@ export function save_free_play_data(tid){
                     "pid": pid,
                     "tid": tid,
                     "is_practice": "TRUE",
+                    "category":ai_category,
                     "level": data.level,
                     "user_color": data.player_color,
                     "user_move": data.player_move[i],
@@ -411,6 +418,7 @@ export function save_free_play_data(tid){
                     "pid": pid,
                     "tid": tid,
                     "is_practice": "TRUE",
+                    "category":ai_category,
                     "level": data.level,
                     "user_color": data.player_color,
                     "user_move": " ",
@@ -426,6 +434,7 @@ export function save_free_play_data(tid){
             "pid": pid,
             "tid": tid,
             "is_practice": "TRUE",
+            "category":ai_category,
             "level": data.level,
             "user_color": " ",
             "user_move": " ",
@@ -440,6 +449,7 @@ export function save_free_play_data(tid){
             "pid": pid,
             "tid": tid,
             "is_practice": "FALSE",
+            "category":" ",
             "level": " ",
             "user_color": " ",
             "user_move": " ",
@@ -455,6 +465,7 @@ export function save_free_play_data(tid){
                     "pid": pid,
                     "tid": tid,
                     "is_practice": "FALSE",
+                    "category":ai_category,
                     "level": data.level,
                     "user_color": data.player_color,
                     "user_move": data.player_move[i],
@@ -469,6 +480,7 @@ export function save_free_play_data(tid){
                     "pid": pid,
                     "tid": tid,
                     "is_practice": "FALSE",
+                    "category":ai_category,
                     "level": data.level,
                     "user_color": data.player_color,
                     "user_move": " ",
@@ -484,6 +496,7 @@ export function save_free_play_data(tid){
             "pid": pid,
             "tid": tid,
             "is_practice": "FALSE",
+            "category":ai_category,
             "level": data.level,
             "user_color": " ",
             "user_move": " ",
@@ -963,7 +976,7 @@ export function create_timeline(timeline){
             `Let's start with some warm-up tasks. <br/><br/>
             When doing these tasks, please say <b>EVERYTHING</b> that goes through your mind. <br/><br/>
             You should start doing the task and talking at the moment you see the task.
-            You have <b>unlimited</b> time.`,
+            You have <b>unlimited</b> time.<br/><br/>`,
 
             `<h3>Warm-up Task 1</h3> 
             <p align='left'>Your friend is coming to New York City this Friday for a 3-day trip.You are going to be her tour guide. <br/><br/>
@@ -985,7 +998,7 @@ export function create_timeline(timeline){
             <li align='left'> German midterm presentation (in the third German class of this week)</li>
             <li align='left'> A math homework assignment (due before the recitation)</li>
             </ul>
-            <p align='left'><b>Consider your course schedule below, how will you plan your week?</b><br/><br/></p>
+            <p align='left'><b>Consider your course schedule below, how will you plan your week?</b><br/></p>
             <img width="1000" height="auto" src="media/task2.png"></img>`
         ],
         show_clickable_nav: true,
@@ -1554,6 +1567,7 @@ export function create_timeline(timeline){
     })
     timeline.push(after_practice_free_play);
     let color = 0;
+    let ai_category = 2;
     // // TODO: 12 -> 42
     for(let i=2; i<42; i++){
         timeline.push(ready_check_free_play((i-1).toString()))

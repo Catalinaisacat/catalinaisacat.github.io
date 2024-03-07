@@ -399,9 +399,9 @@ var jsPsychFourInARowFreePlay = (function (jspsych) {
             this.cvs.removeEventListener("mousemove", this.mouseMoveEventHandler);
             this.cvs.removeEventListener("mousedown", this.mouseDownEventHandler);
             // gather the data to store for the trial
-            if (this.tutorial){
-                this.game_result = "tutorial";
-            }
+            // if (this.tutorial){
+            //     this.game_result = "tutorial";
+            // }
             var trial_data = {
                 game_index: this.game_index,
                 solution: this.current_state,

@@ -808,7 +808,7 @@ var jsPsychFourInARow = (function (jspsych) {
             } else if (this.submit_mode) {
                 this.top.innerHTML = `Length: ${this.length}, New solution for Puzzle ${this.game_index}: ${this.current_state}`;
             } else {
-                this.top.innerHTML = `Puzzle # ${this.puzzle}: You are playing <u>${this.turn}</u> <br/><br/>Plan the best move and say everything that goes through your mind  .`;//, Puzzle ${this.game_index}
+                this.top.innerHTML = `Puzzle # ${this.puzzle}: You are playing <u>${this.turn}</u> <br/>Plan the best move and say everything that goes through your mind.`;//, Puzzle ${this.game_index}
             }
         }
         timer(time){
@@ -919,10 +919,10 @@ var jsPsychFourInARow = (function (jspsych) {
             if (this.free_play){
                 pb = ``
             }
-            let bt = '<button id=\'stop-button\' class=\'puzzle_button\' disabled=\'false\' font-size=\'50px\'style=\'margin-left: 5px;\'> I am done thinking and ready to make a move </button>';
-            let tp = '<h2 id=\'top\'> Puzzle '+ (this.game_index - 2).toString() +': You are playing <u>' + this.turn.toString() + '</u> <br/><br/> Plan the best move and say everything that goes through your mind </h1>';
+            let bt = '<button id=\'stop-button\' class=\'puzzle_button\' disabled=\'false\' font-size=\'40px\'style=\'margin-left: 5px;\'> I am done thinking and ready to make a move </button>';
+            let tp = '<h2 id=\'top\'> Puzzle '+ (this.game_index - 2).toString() +': You are playing <u>' + this.turn.toString() + '</u> <br/> Plan the best move and say everything that goes through your mind </h2>';
             if(this.game_index<3){
-                tp = '<h2 id=\'top\'> Practice Puzzle '+ this.game_index.toString() +': You are playing <u>' + this.turn.toString() + '</u> <br/><br/> Plan the best move and say everything that goes through your mind </h1>';
+                tp = '<h2 id=\'top\'> Practice Puzzle '+ this.game_index.toString() +': You are playing <u>' + this.turn.toString() + '</u> <br/> Plan the best move and say everything that goes through your mind </h2>';
             }
             
             if (this.warm_up){
