@@ -48,9 +48,13 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
   - Minor: Mathematics 
 ## Other Training
 2024.6-Now       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*
+
 2023.11-2024.6   Training Program in Computational Neuroscience, *NYU* 
+
 2023.6-2023.8    Amgen Scholar Program, *Tsinghua University*
+
 2023.1           Computational Neuroscience Winter School, *Shanghai Jiao Tong University*
+
 2022.7           Neuromatch Computational Neuroscience Summer School, *Virtual*
 
 # 💬 Beyond Academics
