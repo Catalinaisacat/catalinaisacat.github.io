@@ -47,7 +47,7 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
   - GPA: 3.84/4.00
   - Minor: Mathematics 
 ## Other Training
-<pre>
+
 2024.6-Now       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*\
 
 2023.11-2024.6   Training Program in Computational Neuroscience, *NYU*\
@@ -57,5 +57,5 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 2023.1           Computational Neuroscience Winter School, *Shanghai Jiao Tong University*\
 
 2022.7           Neuromatch Computational Neuroscience Summer School, *Virtual*\
-</pre>
+
 # 💬 Beyond Academics
