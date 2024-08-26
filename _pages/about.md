@@ -27,16 +27,16 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 
 # 📝 Research 
 ## Research Experience:
-2024.4-Present   **Zhong-Lin Lu’s Lab**, NYU Shanghai and NYU
+2024.4-Present   **Zhong-Lin Lu’s Lab**, NYU Shanghai and NYU\
   *Computational Modelling; Eye-tracking; Visual Search; Attention*
   
-2023.9-Present   **Wei Ji Ma Lab**, NYU
+2023.9-Present   **Wei Ji Ma Lab**, NYU\
   *Planning; Think-aloud Protocol*
   
-2022.9-Present   **Speech, Language And Neuroscience Group (PI: Xing Tian)**, NYU Shanghai
+2022.9-Present   **Speech, Language And Neuroscience Group (PI: Xing Tian)**, NYU Shanghai\
   *Attention; Psycholinguistics; EEG; Eye-tracking*
   
-2021.12-2022.3   **Jeffrey Erlich’s Lab, NYU Shanghai**
+2021.12-2022.3   **Jeffrey Erlich’s Lab, NYU Shanghai**\
   *Optogenetics; Single-neuron recording; Decision-Making under Risk*
   
 ## Projects:
@@ -47,14 +47,15 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
   - GPA: 3.84/4.00
   - Minor: Mathematics 
 ## Other Training
-2024.6-Now       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*
+<pre>
+2024.6-Now       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*\
 
-2023.11-2024.6   Training Program in Computational Neuroscience, *NYU* 
+2023.11-2024.6   Training Program in Computational Neuroscience, *NYU*\
 
-2023.6-2023.8    Amgen Scholar Program, *Tsinghua University*
+2023.6-2023.8    Amgen Scholar Program, *Tsinghua University*\
 
-2023.1           Computational Neuroscience Winter School, *Shanghai Jiao Tong University*
+2023.1           Computational Neuroscience Winter School, *Shanghai Jiao Tong University*\
 
-2022.7           Neuromatch Computational Neuroscience Summer School, *Virtual*
-
+2022.7           Neuromatch Computational Neuroscience Summer School, *Virtual*\
+</pre>
 # 💬 Beyond Academics
