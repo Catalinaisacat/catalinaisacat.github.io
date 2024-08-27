@@ -44,6 +44,7 @@
 }
 
 .masthead__menu-home-item {
+  background-color: #b8cdef;
   @include breakpoint($medium) {
     display: block !important;
   }
