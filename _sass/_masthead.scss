@@ -2,7 +2,7 @@
    MASTHEAD
    ========================================================================== */
 .masthead .masthead__menu .greedy-nav .masthead__menu-home-item .masthead__menu-item {
-  background-color: #b8cdef;
+  background-color: #b8cdef !important;
 }
 .masthead {
   position: sticky;
@@ -15,7 +15,7 @@
   z-index: 20;
 
   &__inner-wrap {
-    background-color: #b8cdef;
+    background-color: #b8cdef !important;
     @include container;
     @include clearfix;
     padding: .5em;
