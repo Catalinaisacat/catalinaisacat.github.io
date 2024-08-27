@@ -46,13 +46,13 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 
 <span class='anchor' id='-educations'></span>
 # 📖 Educations
-2021-Now   **BS in Neural Science (Honor track)**, New York University Shanghai
+2021-Present   **BS in Neural Science (Honor track)**, New York University Shanghai
   - GPA: 3.84/4.00
   - Minor: Mathematics 
 
 ## Other Training
 
-2024.6-Now       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*
+2024.6-Present       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*
 
 2023.11-2024.6   Training Program in Computational Neuroscience, *NYU*
 
@@ -64,4 +64,4 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 
 <span class='anchor' id='-beyond-academics'></span>
 # 💬 Beyond Academics
-
+In my life, I also love 🎨drawing, 🏓pingpong, 🍳cooking and 🎭musicals!
