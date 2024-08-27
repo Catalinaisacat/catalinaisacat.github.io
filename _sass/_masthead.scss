@@ -6,6 +6,7 @@
 }
 .masthead {
   position: sticky;
+  align-items: center;
   top: 0;
   border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
@@ -36,6 +37,7 @@
 }
 
 .masthead__menu {
+  align-items: center;
   ul {
     margin: 0;
     padding: 0;
