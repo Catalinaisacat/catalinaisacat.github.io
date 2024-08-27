@@ -14,6 +14,7 @@
   z-index: 20;
 
   &__inner-wrap {
+    background-color: #b8cdef;
     @include container;
     @include clearfix;
     padding: .5em;
@@ -34,7 +35,7 @@
 }
 
 .masthead__menu {
-
+  background-color: #b8cdef;
   ul {
     margin: 0;
     padding: 0;

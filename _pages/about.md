@@ -62,6 +62,31 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 
 2022.7           Neuromatch Computational Neuroscience Summer School, *Virtual*
 
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <td style="padding-right: 20px; vertical-align: top;">2024.6-Present</td>
+    <td style="vertical-align: top;">Summer Undergraduate Research Program in Neuroscience, <em>NYU Shanghai</em></td>
+  </tr>
+  <tr>
+    <td style="padding-right: 20px; vertical-align: top;">2023.11-2024.6</td>
+    <td style="vertical-align: top;">Training Program in Computational Neuroscience, <em>NYU</em></td>
+  </tr>
+  <tr>
+    <td style="padding-right: 20px; vertical-align: top;">2023.6-2023.8</td>
+    <td style="vertical-align: top;">Amgen Scholar Program, <em>Tsinghua University</em></td>
+  </tr>
+  <tr>
+    <td style="padding-right: 20px; vertical-align: top;">2023.1</td>
+    <td style="vertical-align: top;">Computational Neuroscience Winter School, <em>Shanghai Jiao Tong University</em></td>
+  </tr>
+  <tr>
+    <td style="padding-right: 20px; vertical-align: top;">2022.7</td>
+    <td style="vertical-align: top;">Neuromatch Computational Neuroscience Summer School, <em>Virtual</em></td>
+  </tr>
+</table>
+
+
+
 <span class='anchor' id='-beyond-academics'></span>
 # 💬 Beyond Academics
 In my life, I also love 🎨drawing, 🏓pingpong, 🍳cooking and 🎭musicals!
