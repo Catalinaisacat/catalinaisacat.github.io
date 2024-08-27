@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# About Me
+# 👋 About Me
 Hi, I am Shucheng! 
 
 I am a rising senior from NYU Shanghai, majoring in Neuroscience (Honor track). I’m privileged to work on computational cognitive neuroscience under mentorship of Prof. Wei Ji Ma, Prof. Zhong-Lin Lu and Prof. Xing Tian.
@@ -27,7 +27,7 @@ To tackle these questions, I use a combination of behavioral/psychophysical expe
 
 I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2025.
 
-
+<span class='anchor' id='-research'></span>
 # 📝 Research 
 ## Research Experience:
 2024.4-Present   **Zhong-Lin Lu’s Lab**, NYU Shanghai and NYU\
@@ -44,7 +44,7 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
   
 ## Projects:
 
-
+<span class='anchor' id='-educations'></span>
 # 📖 Educations
 2021-Now   **BS in Neural Science (Honor track)**, New York University Shanghai
   - GPA: 3.84/4.00
@@ -62,4 +62,5 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 
 2022.7           Neuromatch Computational Neuroscience Summer School, *Virtual*
 
+<span class='anchor' id='-beyond-academics'></span>
 # 💬 Beyond Academics
