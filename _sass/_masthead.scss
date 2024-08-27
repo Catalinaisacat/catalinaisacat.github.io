@@ -1,10 +1,11 @@
 /* ==========================================================================
    MASTHEAD
    ========================================================================== */
-.masthead .masthead__menu .greedy-nav .masthead__menu-home-item .masthead__menu-item {
+.greedy-nav {
   background-color: #b8cdef !important;
 }
 .masthead {
+  background-color: #b8cdef !important;
   position: sticky;
   align-items: center;
   top: 0;
@@ -37,6 +38,7 @@
 }
 
 .masthead__menu {
+  background-color: #b8cdef !important;
   align-items: center;
   ul {
     margin: 0;
@@ -47,6 +49,7 @@
 }
 
 .masthead__menu-home-item {
+  background-color: #b8cdef !important;
   @include breakpoint($medium) {
     display: block !important;
   }
@@ -54,6 +57,7 @@
 }
 
 .masthead__menu-item {
+  background-color: #b8cdef !important;
   display: block;
   list-style-type: none;
   white-space: nowrap;
