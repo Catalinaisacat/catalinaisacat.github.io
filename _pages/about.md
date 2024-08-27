@@ -30,70 +30,77 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 <span class='anchor' id='-research'></span>
 # 📝 Research 
 ## Research Experience:
-2024.4-Present   **Zhong-Lin Lu’s Lab**, NYU Shanghai and NYU\
-  *Computational Modelling; Eye-tracking; Visual Search; Attention*
-  
-2023.9-Present   **[Wei Ji Ma Lab](https://www.cns.nyu.edu/malab/)**, NYU\
-  *Planning; Think-aloud Protocol*
-  
-2022.9-Present   **[Speech, Language And Neuroscience Group (PI: Xing Tian)](https://slangscience.github.io/slang/)**, NYU Shanghai\
-  *Attention; Psycholinguistics; EEG; Eye-tracking*
-  
-2021.12-2022.3   **[Jeffrey Erlich’s Lab](https://www.sainsburywellcome.org/web/groups/erlich-lab)**(moved to UCL), NYU Shanghai\
-  *Optogenetics; Single-neuron recording; Decision-Making under Risk*
+<table style="border-collapse: collapse; width: 100%; border: none; margin-top: 20px;">
+  <tr style="border: none;">
+    <td style="padding: 0 20px 3px 0; vertical-align: top; border: none;">2024.4-Present</td>
+    <td style="padding: 0; vertical-align: top; border: none;">
+      <strong style="color: #4b6aa1;">Zhong-Lin Lu’s Lab</strong>, NYU Shanghai and NYU<br>
+      <em>Computational Modelling; Eye-tracking; Visual Search; Attention</em>
+    </td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding: 0 20px 3px 0; vertical-align: top; border: none;">2023.9-Present</td>
+    <td style="padding: 0; vertical-align: top; border: none;">
+      <strong style="color: #4b6aa1;"><a href="https://www.cns.nyu.edu/malab/" style="color: #4b6aa1; text-decoration: none;">Wei Ji Ma Lab</a></strong>, NYU<br>
+      <em>Planning; Think-aloud Protocol</em>
+    </td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2022.9-Present</td>
+    <td style="padding: 0; vertical-align: top; border: none;">
+      <strong style="color: #4b6aa1;"><a href="https://slangscience.github.io/slang/" style="color: #4b6aa1; text-decoration: none;">Speech, Language And Neuroscience Group (PI: Xing Tian)</a></strong>, NYU Shanghai<br>
+      <em>Attention; Psycholinguistics; EEG; Eye-tracking</em>
+    </td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding: 0 10px 0 0; vertical-align: top; border: none;">2021.12-2022.3</td>
+    <td style="padding: 0; vertical-align: top; border: none;">
+      <strong style="color: #4b6aa1;"><a href="https://www.sainsburywellcome.org/web/groups/erlich-lab" style="color: #4b6aa1; text-decoration: none;">Jeffrey Erlich’s Lab</a></strong> (moved to UCL), NYU Shanghai<br>
+      <em>Optogenetics; Single-neuron recording; Decision-Making under Risk</em>
+    </td>
+  </tr>
+</table>
   
 ## Projects:
 
 <span class='anchor' id='-educations'></span>
 # 📖 Educations
-2021-Present   **BS in Neural Science (Honor track)**, New York University Shanghai
-  - GPA: 3.84/4.00
-  - Minor: Mathematics 
-<div style="margin-bottom: 20px;">
-  <div style="font-weight: bold;">2021-Present</div>
-  <div style="font-size: 18px; margin-left: 10px;">
-    <strong>BS in Neural Science (Honor track)</strong>, New York University Shanghai
-  </div>
-  <ul style="margin-top: 5px; margin-left: 30px;">
-    <li>GPA: 3.84/4.00</li>
-    <li>Minor: Mathematics</li>
-  </ul>
-</div>
-## Other Training
-
-2024.6-Present       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*
-
-2023.11-2024.6   Training Program in Computational Neuroscience, *NYU*
-
-2023.6-2023.8    Amgen Scholar Program, *Tsinghua University*
-
-2023.1           Computational Neuroscience Winter School, *Shanghai Jiao Tong University*
-
-2022.7           Neuromatch Computational Neuroscience Summer School, *Virtual*
-
-<table style="border-collapse: collapse; width: 100%; border: none;">
+<table style="border-collapse: collapse; width: 100%; border: none; margin-top: 20px;">
   <tr style="border: none;">
-    <td style="padding-right: 20px; vertical-align: top; border: none;">2024.6-Present</td>
-    <td style="vertical-align: top; border: none;">Summer Undergraduate Research Program in Neuroscience, <em>NYU Shanghai</em></td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 20px; vertical-align: top; border: none;">2023.11-2024.6</td>
-    <td style="vertical-align: top; border: none;">Training Program in Computational Neuroscience, <em>NYU</em></td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 20px; vertical-align: top; border: none;">2023.6-2023.8</td>
-    <td style="vertical-align: top; border: none;">Amgen Scholar Program, <em>Tsinghua University</em></td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 20px; vertical-align: top; border: none;">2023.1</td>
-    <td style="vertical-align: top; border: none;">Computational Neuroscience Winter School, <em>Shanghai Jiao Tong University</em></td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 20px; vertical-align: top; border: none;">2022.7</td>
-    <td style="vertical-align: top; border: none;">Neuromatch Computational Neuroscience Summer School, <em>Virtual</em></td>
+    <td style="padding: 0 22px 3px 0; vertical-align: top; border: none;">2021-Present</td>
+    <td style="padding: 0; vertical-align: top; border: none;">
+      <strong style="color: #4b6aa1;">BS in Neural Science (Honor track)</strong>, New York University Shanghai
+      <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
+        <li style="margin: 0;">GPA: 3.84/4.00</li>
+        <li style="margin: 0;">Minor: Mathematics</li>
+      </ul>
+    </td>
   </tr>
 </table>
 
+## Other Training
+<table style="border-collapse: collapse; width: 100%; border: none;">
+  <tr style="border: none;">
+    <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2024.6-Present</td>
+    <td style="padding: 0; vertical-align: top; border: none;">Summer Undergraduate Research Program in Neuroscience, <em>NYU Shanghai</em></td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2023.11-2024.6</td>
+    <td style="padding: 0; vertical-align: top; border: none;">Training Program in Computational Neuroscience, <em>NYU</em></td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2023.6-2023.8</td>
+    <td style="padding: 0; vertical-align: top; border: none;">Amgen Scholar Program, <em>Tsinghua University</em></td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2023.1</td>
+    <td style="padding: 0; vertical-align: top; border: none;">Computational Neuroscience Winter School, <em>Shanghai Jiao Tong University</em></td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding: 0 10px 0 0; vertical-align: top; border: none;">2022.7</td>
+    <td style="padding: 0; vertical-align: top; border: none;">Neuromatch Computational Neuroscience Summer School, <em>Virtual</em></td>
+  </tr>
+</table>
 
 <span class='anchor' id='-beyond-academics'></span>
 # 💬 Beyond Academics
