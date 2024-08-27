@@ -16,14 +16,17 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
+# About Me
+Hi, I am Shucheng! 
 
-Hi, I am Shucheng. I am a rising senior from NYU Shanghai, majoring in Neuroscience (Honor track). I’m privileged to work on computational cognitive neuroscience under mentorship of Prof. Wei Ji Ma, Prof. Zhong-Lin Lu and Prof. Xing Tian.
+I am a rising senior from NYU Shanghai, majoring in Neuroscience (Honor track). I’m privileged to work on computational cognitive neuroscience under mentorship of Prof. Wei Ji Ma, Prof. Zhong-Lin Lu and Prof. Xing Tian.
 
 I am specifically interested in how the human brain proceeds and reacts upon information, which includes making predictions, selecting important information(attention), translating information into organized knowledge(perception), storing information(memory), as well as amazing higher cognitive processes such as problem-solving, planning, learning and self-evaluation(metacognition).
 
-To tackle these questions, I prefer using a combination of behavioral/psychophysical experiments, computational models and neural recordings.
+To tackle these questions, I use a combination of behavioral/psychophysical experiments, computational models and neural recordings.
 
 I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2025.
+
 
 # 📝 Research 
 ## Research Experience:
@@ -48,14 +51,14 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
   - Minor: Mathematics 
 ## Other Training
 
-2024.6-Now       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*\
+2024.6-Now       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*
 
-2023.11-2024.6   Training Program in Computational Neuroscience, *NYU*\
+2023.11-2024.6   Training Program in Computational Neuroscience, *NYU*
 
-2023.6-2023.8    Amgen Scholar Program, *Tsinghua University*\
+2023.6-2023.8    Amgen Scholar Program, *Tsinghua University*
 
-2023.1           Computational Neuroscience Winter School, *Shanghai Jiao Tong University*\
+2023.1           Computational Neuroscience Winter School, *Shanghai Jiao Tong University*
 
-2022.7           Neuromatch Computational Neuroscience Summer School, *Virtual*\
+2022.7           Neuromatch Computational Neuroscience Summer School, *Virtual*
 
 # 💬 Beyond Academics
