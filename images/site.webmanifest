@@ -13,7 +13,7 @@
         "type": "image/png"
         }
     ],
-    "theme_color": "#8A2BE2", 
+    "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
     "display": "standalone"
  }
