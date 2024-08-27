@@ -49,6 +49,7 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 2021-Now   **BS in Neural Science (Honor track)**, New York University Shanghai
   - GPA: 3.84/4.00
   - Minor: Mathematics 
+
 ## Other Training
 
 2024.6-Now       Summer Undergraduate Research Program in Neuroscience, *NYU Shanghai*
