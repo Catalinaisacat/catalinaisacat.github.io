@@ -1,11 +1,12 @@
 /* ==========================================================================
    MASTHEAD
    ========================================================================== */
-
+.masthead .masthead__menu .greedy-nav .masthead__menu-home-item .masthead__menu-item {
+  background-color: #b8cdef;
+}
 .masthead {
   position: sticky;
   top: 0;
-  background-color: #b8cdef;
   border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -35,7 +36,6 @@
 }
 
 .masthead__menu {
-  background-color: #b8cdef;
   ul {
     margin: 0;
     padding: 0;
@@ -43,11 +43,8 @@
     list-style-type: none;
   }
 }
-.greedy-nav {
-  background-color: #b8cdef;
-}
+
 .masthead__menu-home-item {
-  background-color: #b8cdef;
   @include breakpoint($medium) {
     display: block !important;
   }
@@ -55,7 +52,6 @@
 }
 
 .masthead__menu-item {
-  background-color: #b8cdef;
   display: block;
   list-style-type: none;
   white-space: nowrap;

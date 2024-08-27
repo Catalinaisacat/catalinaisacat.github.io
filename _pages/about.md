@@ -35,28 +35,28 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
     <td style="padding: 0 20px 3px 0; vertical-align: top; border: none;">2024.4-Present</td>
     <td style="padding: 0; vertical-align: top; border: none;">
       <strong style="color: #4b6aa1;">Zhong-Lin Lu’s Lab</strong>, NYU Shanghai and NYU<br>
-      <li style="margin: 0;"><em>Computational Modelling; Eye-tracking; Visual Search; Attention</em>
+      <em>Computational Modelling; Eye-tracking; Visual Search; Attention</em>
     </td>
   </tr>
   <tr style="border: none;">
     <td style="padding: 0 20px 3px 0; vertical-align: top; border: none;">2023.9-Present</td>
     <td style="padding: 0; vertical-align: top; border: none;">
       <strong style="color: #4b6aa1;"><a href="https://www.cns.nyu.edu/malab/" style="color: #4b6aa1; text-decoration: none;">Wei Ji Ma Lab</a></strong>, NYU<br>
-      <li style="margin: 0;"><em>Planning; Think-aloud Protocol</em>
+      <em>Planning; Think-aloud Protocol</em>
     </td>
   </tr>
   <tr style="border: none;">
     <td style="padding: 0 20px 3px 0; vertical-align: top; border: none;">2022.9-Present</td>
     <td style="padding: 0; vertical-align: top; border: none;">
       <strong style="color: #4b6aa1;"><a href="https://slangscience.github.io/slang/" style="color: #4b6aa1; text-decoration: none;">Speech, Language And Neuroscience Group (PI: Xing Tian)</a></strong>, NYU Shanghai<br>
-      <li style="margin: 0;"><em>Attention; Psycholinguistics; EEG; Eye-tracking</em>
+      <em>Attention; Psycholinguistics; EEG; Eye-tracking</em>
     </td>
   </tr>
   <tr style="border: none;">
     <td style="padding: 0 20px 0 0; vertical-align: top; border: none;">2021.12-2022.3</td>
     <td style="padding: 0; vertical-align: top; border: none;">
       <strong style="color: #4b6aa1;"><a href="https://www.sainsburywellcome.org/web/groups/erlich-lab" style="color: #4b6aa1; text-decoration: none;">Jeffrey Erlich’s Lab</a></strong> (moved to UCL), NYU Shanghai<br>
-      <li style="margin: 0;"><em>Optogenetics; Single-neuron recording; Decision-Making under Risk</em>
+      <em>Optogenetics; Single-neuron recording; Decision-Making under Risk</em>
     </td>
   </tr>
 </table>
