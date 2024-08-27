@@ -19,7 +19,7 @@ redirect_from:
 # 👋 About Me
 Hi, I am Shucheng! 
 
-I am a rising senior from NYU Shanghai, majoring in Neuroscience (Honor track). I’m privileged to work on computational cognitive neuroscience under mentorship of Prof. Wei Ji Ma, Prof. Zhong-Lin Lu and Prof. Xing Tian.
+I am a rising senior from NYU Shanghai, majoring in Neuroscience (Honor track). I’m privileged to work on computational cognitive neuroscience under mentorship of [Prof. Wei Ji Ma](https://as.nyu.edu/faculty/weiji-ma.html), [Prof. Zhong-Lin Lu](https://shanghai.nyu.edu/academics/faculty/directory/zhong-lin-lu), and [Prof. Xing Tian](https://shanghai.nyu.edu/academics/faculty/directory/xing-tian).
 
 I am specifically interested in how the human brain proceeds and reacts upon information, which includes making predictions, selecting important information(attention), translating information into organized knowledge(perception), storing information(memory), as well as amazing higher cognitive processes such as problem-solving, planning, learning and self-evaluation(metacognition).
 
@@ -33,13 +33,13 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 2024.4-Present   **Zhong-Lin Lu’s Lab**, NYU Shanghai and NYU\
   *Computational Modelling; Eye-tracking; Visual Search; Attention*
   
-2023.9-Present   **Wei Ji Ma Lab**, NYU\
+2023.9-Present   **[Wei Ji Ma Lab](https://www.cns.nyu.edu/malab/)**, NYU\
   *Planning; Think-aloud Protocol*
   
-2022.9-Present   **Speech, Language And Neuroscience Group (PI: Xing Tian)**, NYU Shanghai\
+2022.9-Present   **[Speech, Language And Neuroscience Group (PI: Xing Tian)](https://slangscience.github.io/slang/)**, NYU Shanghai\
   *Attention; Psycholinguistics; EEG; Eye-tracking*
   
-2021.12-2022.3   **Jeffrey Erlich’s Lab, NYU Shanghai**\
+2021.12-2022.3   **[Jeffrey Erlich’s Lab](https://www.sainsburywellcome.org/web/groups/erlich-lab)**(moved to UCL), NYU Shanghai\
   *Optogenetics; Single-neuron recording; Decision-Making under Risk*
   
 ## Projects:
@@ -64,4 +64,4 @@ I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2
 
 <span class='anchor' id='-beyond-academics'></span>
 # 💬 Beyond Academics
-<a href="https://www.overleaf.com/read/yynsfmvxhrhx#8247fd" </a>
+
