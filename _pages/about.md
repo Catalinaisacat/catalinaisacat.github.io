@@ -19,13 +19,16 @@ redirect_from:
 # 👋 About Me
 Hi, I am Shucheng! 
 
-I am a rising senior from NYU Shanghai, majoring in Neuroscience (Honor track). I’m privileged to work on computational cognitive neuroscience under mentorship of <strong style="color: #4b6aa1;"><a href="https://as.nyu.edu/faculty/weiji-ma.html" style="color: #4b6aa1; text-decoration: none;">Prof. Wei Ji Ma</a></strong>, <strong style="color: #4b6aa1;"><a href="https://shanghai.nyu.edu/academics/faculty/directory/zhong-lin-lu" style="color: #4b6aa1; text-decoration: none;">Prof. Zhong-Lin Lu</a></strong>, and <strong style="color: #4b6aa1;"><a href="https://shanghai.nyu.edu/academics/faculty/directory/xing-tian" style="color: #4b6aa1; text-decoration: none;">Prof. Xing Tian</a></strong>.
+I'm a rising senior from NYU Shanghai, majoring in Neuroscience (honor track). I’m privileged to work on computational cognitive neuroscience under the mentoring of <strong style="color: #4b6aa1;"><a href="https://as.nyu.edu/faculty/weiji-ma.html" style="color: #4b6aa1; text-decoration: none;">Prof. Wei Ji Ma</a></strong>, <strong style="color: #4b6aa1;"><a href="https://shanghai.nyu.edu/academics/faculty/directory/zhong-lin-lu" style="color: #4b6aa1; text-decoration: none;">Prof. Zhong-Lin Lu</a></strong>, and <strong style="color: #4b6aa1;"><a href="https://shanghai.nyu.edu/academics/faculty/directory/xing-tian" style="color: #4b6aa1; text-decoration: none;">Prof. Xing Tian</a></strong>.
 
-I am specifically interested in how the human brain proceeds and reacts upon information, which includes making predictions, selecting important information(attention), translating information into organized knowledge(perception), storing information(memory), as well as amazing higher cognitive processes such as problem-solving, planning, learning and self-evaluation(metacognition).
+I'm interested in **how the human brain proceeds and reacts upon information**, which includes making predictions, selecting important information (attention), translating information into organized knowledge (perception), storing information (memory), as well as amazing higher cognitive processes such as problem-solving, planning, learning, and self-evaluation (metacognition).
 
-To tackle these questions, I use a combination of behavioral/psychophysical experiments, computational models and neural recordings.
+To tackle these questions, I mainly use a combination of three tools: **computational models, behavioral/psychophysical experiments, and neural recordings**. Computational models are the "flashlight," illuminating the pathway that could be wrong or irrelevant.
+Experiments are the "ground," providing the observable truth that could be chaotic or too complex. Neural recordings are the "trace" in our brains, capturing the direct imprint of cognitive processes that could be blurry and intricate. 
 
-I am seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2025.
+I love collaborations and making friends with people from different cultural backgrounds! Welcome to send me emails.
+
+I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2025.
 
 <span class='anchor' id='-research'></span>
 # 📝 Research 
