@@ -23,8 +23,8 @@ I'm a rising senior from NYU Shanghai, majoring in Neuroscience (honor track). I
 
 I'm interested in **how the human brain proceeds and reacts upon information**, which includes making predictions, selecting important information (attention), translating information into organized knowledge (perception), storing information (memory), as well as amazing higher cognitive processes such as problem-solving, planning, learning, and self-evaluation (metacognition).
 
-To tackle these questions, I mainly use a combination of three tools: **computational models, behavioral/psychophysical experiments, and neural recordings**. Computational models are the "flashlight," illuminating the pathway that could be wrong or irrelevant.
-Experiments are the "ground," providing the observable truth that could be chaotic or too complex. Neural recordings are the "trace" in our brains, capturing the direct imprint of cognitive processes that could be blurry and intricate. 
+I mainly use a combination of three tools: **computational models, behavioral/psychophysical experiments, and neural recordings**. Computational models are the "flashlight," illuminating the pathway that could be wrong or irrelevant.
+Experiments are the "ground," providing the observable truth that could be chaotic or too complex. Neural recordings are the "trace" in our brains, capturing the direct imprint of cognitive processes that could be blurry and intricate. With these together, I'm working like a detective to solve the mystery behind this great information machine in our head.
 
 I love collaborations and making friends with people from different cultural backgrounds! Welcome to send me emails.
 

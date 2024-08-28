@@ -3,11 +3,11 @@
    ========================================================================== */
 .greedy-nav {
   background-color: #b8cdef !important;
+  align-items: center;
 }
 .masthead {
   background-color: #b8cdef !important;
   position: sticky;
-  align-items: center;
   top: 0;
   border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
