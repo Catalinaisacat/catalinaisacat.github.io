@@ -37,7 +37,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
   <tr style="border: none;">
     <td style="padding: 0 20px 3px 0; vertical-align: top; border: none;">2024.4-Present</td>
     <td style="padding: 0; vertical-align: top; border: none;">
-      <strong style="color: #4b6aa1;"><a href="https://lobes.osu.edu/staff.php" style="color: #4b6aa1; text-decoration: none;">Laboratory Of Brain Process (PI: Zhong-Lin Lu)</a></strong>, NYU Shanghai and NYU<br>
+      <strong style="color: #4b6aa1;"><a href="https://lobes.osu.edu/staff.php" style="color: #4b6aa1; text-decoration: none;">Laboratory Of Brain ProcessES (PI: Zhong-Lin Lu)</a></strong>, NYU Shanghai and NYU<br>
       <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
         <li style="margin: 0;"><em>Computational Modelling; Eye-tracking; Visual Search; Attention</em></li>
       </ul>
