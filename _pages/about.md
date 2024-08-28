@@ -37,7 +37,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
   <tr style="border: none;">
     <td style="padding: 0 20px 3px 0; vertical-align: top; border: none;">2024.4-Present</td>
     <td style="padding: 0; vertical-align: top; border: none;">
-      <strong>Zhong-Lin Lu’s Lab</strong>, NYU Shanghai and NYU<br>
+      <strong style="color: #4b6aa1;"><a href="https://lobes.osu.edu/staff.php" style="color: #4b6aa1; text-decoration: none;">Laboratory Of Brain Process (PI: Zhong-Lin Lu)</a></strong>, NYU Shanghai and NYU<br>
       <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
         <li style="margin: 0;"><em>Computational Modelling; Eye-tracking; Visual Search; Attention</em></li>
       </ul>
@@ -64,7 +64,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
   <tr style="border: none;">
     <td style="padding: 0 20px 0 0; vertical-align: top; border: none;">2021.12-2022.3</td>
     <td style="padding: 0; vertical-align: top; border: none;">
-      <strong>Jeffrey Erlich’s Lab</strong> (moved to UCL), NYU Shanghai<br>
+      <strong style="color: #4b6aa1;"><a href="https://www.sainsburywellcome.org/web/groups/erlich-lab" style="color: #4b6aa1; text-decoration: none;">Erlich Lab (PI: Jeffery Erlich)</a></strong> (moved to UCL), NYU Shanghai<br>
       <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
         <li style="margin: 0;"><em>Optogenetics; Single-neuron recording; Decision-Making under Risk</em></li>
       </ul>
@@ -80,7 +80,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
   <tr style="border: none;">
     <td style="padding: 0 20px 3px 0; vertical-align: top; border: none;">2021-Present</td>
     <td style="padding: 0; vertical-align: top; border: none;">
-      <strong style="color: #4b6aa1;">BS in Neural Science (Honor track)</strong>, New York University Shanghai
+      <strong>BS in Neural Science (Honor track)</strong>, New York University Shanghai
       <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
         <li style="margin: 0;">GPA: 3.84/4.00</li>
         <li style="margin: 0;">Minor: Mathematics</li>
