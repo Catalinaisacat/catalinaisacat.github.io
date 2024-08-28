@@ -130,8 +130,5 @@ Here are some of my favourite pics in my journeys!
     <div class="gallery-item">
         <img src="\images\image4.JPG" alt="Image 4">
     </div>
-    <div class="gallery-item">
-        <img src="\images\image5.jpg" alt="Image 5">
-    </div>
     <!-- Add more images as needed -->
 </div>
