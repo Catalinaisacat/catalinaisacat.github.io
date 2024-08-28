@@ -51,14 +51,16 @@
 .masthead__menu-home-item {
   background-color: #b8cdef !important;
   @include breakpoint($medium) {
-    display: block !important;
+    //display: block !important;
+    display: flex;
   }
   display: none !important;
 }
 
 .masthead__menu-item {
   background-color: #b8cdef !important;
-  display: block;
+  //display: block;
+  display: flex;
   list-style-type: none;
   white-space: nowrap;
 
