@@ -116,3 +116,15 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
 <span class='anchor' id='-beyond-academics'></span>
 # 💬 Beyond Academics
 In my life, I also love 🎨drawing, 🏓pingpong, 🍳cooking and 🎭musicals!
+<div class="gallery">
+    <div class="gallery-item">
+        <img src=".images.image1.jpg" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+        <img src=".images.image2.jpg" alt="Image 2">
+    </div>
+    <div class="gallery-item">
+        <img src=".images.image3.jpg" alt="Image 3">
+    </div>
+    <!-- Add more images as needed -->
+</div>
