@@ -115,7 +115,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
 
 <span class='anchor' id='-beyond-academics'></span>
 # 💬 Beyond Academics
-In my life, I also love 🏖️travelling, 🎨drawing, 🏓pingpong, 🍳cooking and 🎭musicals!
+In my life, I also love 🏖️travelling, 🎨drawing, 🏓pingpong, 🍳cooking, 🎭musicals and 🖋️literature!
 Here are some of my favourite pics in my journeys!
 <div class="gallery">
     <div class="gallery-item">
@@ -128,10 +128,10 @@ Here are some of my favourite pics in my journeys!
         <img src="\images\image3.JPG" alt="Image 3">
     </div>
     <div class="gallery-item">
-        <img src="\images\image4.JPG" alt="Image 3">
+        <img src="\images\image4.JPG" alt="Image 4">
     </div>
     <div class="gallery-item">
-        <img src="\images\image5.JPG" alt="Image 3">
+        <img src="\images\image5.JPG" alt="Image 5">
     </div>
     <!-- Add more images as needed -->
 </div>
