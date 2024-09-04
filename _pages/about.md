@@ -89,7 +89,7 @@ It is a long way to go from “seeing” information as massive amounts of basic
 
 Planning is a complex cognitive process that requires mental stimulation for future scenarios. A traditional psychological method to investigate planning is called the “think-aloud” method. In this study, we revived this method in a game called 4-in-a-row. We recorded the free narration when participants were solving puzzles that required planning. We coded the narrations into a set of qualitative and quantitative metrics that offer a comprehensive understanding of human planning and inspired us to build new models.
 
-<em style="color: #4b6aa1;"><a href="/docs/thinkaloud_poster.pdf" style="color: #4b6aa1; text-decoration: none;" target="_blank">Click here for viewing the poster</a></em>
+<em style="color: #4b6aa1;"><a href="/images/thinkaloud_poster.pdf" style="color: #4b6aa1; text-decoration: none;" target="_blank">Click here for viewing the poster</a></em>
 
 <hr style="border: 0.5px solid #d3d3d3; margin: 15px 0;">
 ### Decision Making
