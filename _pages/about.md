@@ -75,20 +75,25 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
 ## Projects:
 ### Attention
 **Does information entropy drive attention? How? (Supervisor: Zhong-Lin Lu)**
+
 In our daily lives, we tend to pay attention to things that provide a lot of information (like short videos) rather than things that offer little information (like a blank piece of paper on your desk). This natural process helps our brains process information more efficiently, allowing us to prioritize new information and get a better understanding of our surroundings. We are proposing a new model for bottom-up visual attention based on Bayesian adaptive estimation and mutual information.
 
 **What is the representation of attention? (Supervisor: Xing Tian)**
+
 It is a long way to go from “seeing” information as massive amounts of basic visual features to “understanding” them as knowledge, at which stage do we select them? This question (representation of attention) has been under debate for decades. Some believe that selection is solely based on basic visual features, while others believe that selection can also happen after grouping. In this study, we designed a novel visual search paradigm with eye-tracking and seeked to offer strong evidence for the later hypothesis.
 
 ### Planning
 **How do humans plan? (Supervisor: Wei Ji Ma)**
+
 Planning is a complex cognitive process that requires mental stimulation for future scenarios. A traditional psychological method to investigate planning is called the “think-aloud” method. In this study, we revived this method in a game called 4-in-a-row. We recorded the free narration when participants were solving puzzles that required planning. We coded the narrations into a set of qualitative and quantitative metrics that offer a comprehensive understanding of human planning and inspired us to build new models.
-*Click here for viewing the poster*
-<em style="color: #4b6aa1;"><a href="docs/thinkaloud_poster.pdf" target="_blank">Click here for viewing the poster</a></em>
+
+<em style="color: #4b6aa1;"><a href="\docs\thinkaloud_poster.pdf" target="_blank">Click here for viewing the poster</a></em>
 
 ### Decision Making
 **How do people learn to make decisions from reward history?**
+
 This is a final project from one of my favorite course “Decision Making” at NYU taught by <strong style="color: #4b6aa1;"><a href="https://as.nyu.edu/faculty/laurence-thomas-maloney.html" style="color: #4b6aa1; text-decoration: none;">Prof. Laurence Maloney</a></strong>.
+
 Humans can learn from the past and adjust their perception of value and probability dynamically. For example, some people become more and more addicted to simple gambling games as they play them. To investigate this question, Prof. Maloney and I designed a series of experiments to play a lottery game for multiple rounds. They could make choices among “purchase,” “skip,” and "exit,” with an immediate outcome (whether winning the lottery or not) given after each trial. Our pilot data showed that the choices of participants are biased by a succession of wins or losses. We developed process models based on prospect theory, machine learning, and weighted Markov decision process.
 
 <span class='anchor' id='-educations'></span>
