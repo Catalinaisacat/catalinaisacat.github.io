@@ -21,10 +21,9 @@ Hi, I am Shucheng!
 
 I'm a rising senior from NYU Shanghai, majoring in Neuroscience (honors track) and minoring in Maths. I’m privileged to work on computational cognitive neuroscience under the mentoring of <strong style="color: #4b6aa1;"><a href="https://as.nyu.edu/faculty/weiji-ma.html" style="color: #4b6aa1; text-decoration: none;">Prof. Wei Ji Ma</a></strong>, <strong style="color: #4b6aa1;"><a href="https://shanghai.nyu.edu/academics/faculty/directory/zhong-lin-lu" style="color: #4b6aa1; text-decoration: none;">Prof. Zhong-Lin Lu</a></strong>, and <strong style="color: #4b6aa1;"><a href="https://shanghai.nyu.edu/academics/faculty/directory/xing-tian" style="color: #4b6aa1; text-decoration: none;">Prof. Xing Tian</a></strong>.
 
-I'm interested in **how the human brain proceeds and reacts upon information**, which includes making predictions, selecting important information (attention), translating information into organized knowledge (perception), storing information (memory), as well as amazing higher cognitive processes such as problem-solving, planning, learning, and self-evaluation (metacognition).
+I'm interested in **how the human brain proceeds and reacts upon information**. As an information machine, the human brain is a marvel of efficiency and complexity, continuously handling a dynamic influx of sensory input. This leads me to wonder if there are some simple but highly adaptive computations shared by different cognitive processes. Or, if there are some representations shared across different forms of contexts. I am devoted to finding these keys to unlock the black box.
 
-I mainly use a combination of three tools: **computational models, behavioral/psychophysical experiments, and neural recordings**. Computational models are the "flashlight," illuminating the pathway that could be wrong or irrelevant.
-Experiments are the "ground," providing the observable truth that could be chaotic or too complex. Neural recordings are the "trace" in our brains, capturing the direct imprint of cognitive processes that could be blurry and intricate. Having quite a lot of trial and error solely relying on any one of these tools, I realized that the integrated method is essential in evaluating models, improving experiment designs, and building a more holistic and accurate interpretation of data.
+I mainly use a combination of three tools: **computational models, behavioral/psychophysical experiments, and neural recordings**. Computational models illuminate the pathway that could be wrong or irrelevant. Experiments provide the observable truth that could be chaotic or too complex. Neural recordings capture the direct imprint of cognitive processes that could be blurry and intricate. Having quite a lot of trial and error solely relying on any one of these tools, I realized that the integrated method is essential in evaluating models, improving experiment designs, and building a more holistic and accurate interpretation of data.
 
 I love interdisciplinary work and collaboration with people from different backgrounds, as innovations often come from unexpected connections and fresh ways of thinking. I particularly like borrowing cool ideas/tools from physics, mathematics and computer science although I don’t have enough credits to take many related courses in my undergraduate. But I do enjoy learning them myself for research or in my free time for fun.
 
@@ -119,23 +118,23 @@ Humans can learn from the past and adjust their perception of value and probabil
 <table style="border-collapse: collapse; width: 100%; border: none;">
   <tr style="border: none;">
     <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2024.6-Present</td>
-    <td style="padding: 0; vertical-align: top; border: none;">Summer Undergraduate Research Program in Neuroscience, <em>NYU Shanghai</em></td>
+    <td style="padding: 0; vertical-align: top; border: none;">Summer Undergraduate Research Program in Neuroscience, NYU Shanghai</td>
   </tr>
   <tr style="border: none;">
     <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2023.11-2024.6</td>
-    <td style="padding: 0; vertical-align: top; border: none;">Training Program in Computational Neuroscience, <em>NYU</em></td>
+    <td style="padding: 0; vertical-align: top; border: none;">Training Program in Computational Neuroscience, NYU</td>
   </tr>
   <tr style="border: none;">
     <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2023.6-2023.8</td>
-    <td style="padding: 0; vertical-align: top; border: none;">Amgen Scholar Program, <em>Tsinghua University</em></td>
+    <td style="padding: 0; vertical-align: top; border: none;">Amgen Scholar Program, Tsinghua University</td>
   </tr>
   <tr style="border: none;">
     <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2023.1</td>
-    <td style="padding: 0; vertical-align: top; border: none;">Computational Neuroscience Winter School, <em>Shanghai Jiao Tong University</em></td>
+    <td style="padding: 0; vertical-align: top; border: none;">Computational Neuroscience Winter School, Shanghai Jiao Tong University</td>
   </tr>
   <tr style="border: none;">
     <td style="padding: 0 10px 0 0; vertical-align: top; border: none;">2022.7</td>
-    <td style="padding: 0; vertical-align: top; border: none;">Neuromatch Computational Neuroscience Summer School, <em>Virtual</em></td>
+    <td style="padding: 0; vertical-align: top; border: none;">Neuromatch Computational Neuroscience Summer School, Virtual</td>
   </tr>
 </table>
 
