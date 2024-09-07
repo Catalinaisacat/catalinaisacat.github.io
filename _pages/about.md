@@ -38,7 +38,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
     <td style="padding: 0; vertical-align: top; border: none;">
       <strong style="color: #4b6aa1;"><a href="https://lobes.osu.edu/staff.php" style="color: #4b6aa1; text-decoration: none;">Laboratory Of Brain ProcessES (PI: Zhong-Lin Lu)</a></strong>, NYU Shanghai and NYU<br>
       <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
-        <li style="margin: 0;"><em>Computational Modelling; Eye-tracking; Visual Search; Attention</em></li>
+        <li style="margin: 0;">Computational Modelling; Eye-tracking; Visual Search; Attention</li>
       </ul>
     </td>
   </tr>
@@ -47,7 +47,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
     <td style="padding: 0; vertical-align: top; border: none;">
       <strong style="color: #4b6aa1;"><a href="https://www.cns.nyu.edu/malab/" style="color: #4b6aa1; text-decoration: none;">Wei Ji Ma Lab</a></strong>, NYU<br>
       <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
-        <li style="margin: 0;"><em>Planning; Think-aloud Protocol</em></li>
+        <li style="margin: 0;">Planning; Think-aloud Protocol</li>
       </ul>
     </td>
   </tr>
@@ -56,7 +56,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
     <td style="padding: 0; vertical-align: top; border: none;">
       <strong style="color: #4b6aa1;"><a href="https://slangscience.github.io/slang/" style="color: #4b6aa1; text-decoration: none;">Speech, Language And Neuroscience Group (PI: Xing Tian)</a></strong>, NYU Shanghai<br>
       <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
-        <li style="margin: 0;"><em>Attention; Psycholinguistics; EEG; Eye-tracking</em></li>
+        <li style="margin: 0;">Attention; Psycholinguistics; EEG; Eye-tracking</li>
       </ul>
     </td>
   </tr>
@@ -65,7 +65,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
     <td style="padding: 0; vertical-align: top; border: none;">
       <strong style="color: #4b6aa1;"><a href="https://www.sainsburywellcome.org/web/groups/erlich-lab" style="color: #4b6aa1; text-decoration: none;">Erlich Lab (PI: Jeffery Erlich)</a></strong> (moved to UCL), NYU Shanghai<br>
       <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
-        <li style="margin: 0;"><em>Optogenetics; Single-neuron recording; Decision-Making under Risk</em></li>
+        <li style="margin: 0;">Optogenetics; Single-neuron recording; Decision-Making under Risk</li>
       </ul>
     </td>
   </tr>
@@ -117,11 +117,11 @@ Humans can learn from the past and adjust their perception of value and probabil
 ## Other Training
 <table style="border-collapse: collapse; width: 100%; border: none;">
   <tr style="border: none;">
-    <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2024.6-Present</td>
+    <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2024.6-2024.8</td>
     <td style="padding: 0; vertical-align: top; border: none;">Summer Undergraduate Research Program in Neuroscience, NYU Shanghai</td>
   </tr>
   <tr style="border: none;">
-    <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2023.11-2024.6</td>
+    <td style="padding: 0 10px 3px 0; vertical-align: top; border: none;">2023.11-present</td>
     <td style="padding: 0; vertical-align: top; border: none;">Training Program in Computational Neuroscience, NYU</td>
   </tr>
   <tr style="border: none;">
