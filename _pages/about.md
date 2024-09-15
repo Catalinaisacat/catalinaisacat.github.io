@@ -21,11 +21,11 @@ Hi, I am Shucheng!
 
 I'm a rising senior from NYU Shanghai, majoring in Neuroscience (honors track) and minoring in Maths. I’m privileged to work on computational cognitive neuroscience under the mentoring of <strong style="color: #4b6aa1;"><a href="https://as.nyu.edu/faculty/weiji-ma.html" style="color: #4b6aa1; text-decoration: none;">Prof. Wei Ji Ma</a></strong>, <strong style="color: #4b6aa1;"><a href="https://shanghai.nyu.edu/academics/faculty/directory/zhong-lin-lu" style="color: #4b6aa1; text-decoration: none;">Prof. Zhong-Lin Lu</a></strong>, and <strong style="color: #4b6aa1;"><a href="https://shanghai.nyu.edu/academics/faculty/directory/xing-tian" style="color: #4b6aa1; text-decoration: none;">Prof. Xing Tian</a></strong>.
 
-I'm interested in **how the human brain proceeds and reacts upon information**. As an information machine, the human brain is a marvel of efficiency and complexity, continuously handling a dynamic influx of sensory input. This leads me to wonder if there are some simple but highly adaptive computations shared by different cognitive processes. Or, if there are some representations shared across different forms of contexts. I am devoted to finding these keys to unlock the black box.
+I'm interested in **how the human brain processes and reacts upon information**. As an information machine, the human brain is a marvel of efficiency and complexity, continuously handling a dynamic influx of sensory input. This leads me to wonder if there are some simple but highly adaptive computations shared by different cognitive processes. Or, if there are some representations shared across different forms of contexts. I am devoted to finding these keys to unlock the black box.
 
 I mainly use a combination of three tools: **computational models, behavioral/psychophysical experiments, and neural recordings**. Computational models illuminate the pathway that could be wrong or irrelevant. Experiments provide the observable truth that could be chaotic or too complex. Neural recordings capture the direct imprint of cognitive processes that could be blurry and intricate. Having quite a lot of trial and error solely relying on any one of these tools, I realized that the integrated method is essential in evaluating models, improving experiment designs, and building a more holistic and accurate interpretation of data.
 
-I love interdisciplinary work and collaboration with people from different backgrounds, as innovations often come from unexpected connections and fresh ways of thinking. I particularly like borrowing cool ideas/tools from physics, mathematics and computer science although I don’t have enough credits to take many related courses in my undergraduate. But I do enjoy learning them myself for research or in my free time for fun.
+I love interdisciplinary work and collaboration with people from different backgrounds, as innovations often come from unexpected connections and fresh ways of thinking. I particularly like borrowing cool ideas/tools from physics, mathematics, and computer science although I don’t have enough credits to take many related courses in my undergraduate. But I do enjoy learning them myself for research or in my free time for fun.
 
 I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 2025.
 
@@ -65,7 +65,7 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
     <td style="padding: 0; vertical-align: top; border: none;">
       <strong style="color: #4b6aa1;"><a href="https://www.sainsburywellcome.org/web/groups/erlich-lab" style="color: #4b6aa1; text-decoration: none;">Erlich Lab (PI: Jeffery Erlich)</a></strong> (moved to UCL), NYU Shanghai<br>
       <ul style="margin: 3px 0; padding-left: 20px; list-style: none;">
-        <li style="margin: 0;">Optogenetics; Single-neuron recording; Decision-Making under Risk</li>
+        <li style="margin: 0;">Optogenetics; Single-neuron recording; Decision-making under Risk</li>
       </ul>
     </td>
   </tr>
@@ -73,20 +73,20 @@ I'm seeking a Ph.D. position in Cognitive Science after my graduation in Fall 20
   
 ## Projects:
 ### Attention
-**Does information entropy drive attention? How? (Supervisor: Zhong-Lin Lu)**
+**How do humans allocate attention in multiple object tracking? (Supervisor: Zhong-Lin Lu)**
 
-In our daily lives, we tend to pay attention to things that provide a lot of information (like short videos) rather than things that offer little information (like a blank piece of paper on your desk). This natural process helps our brains process information more efficiently, allowing us to prioritize new information and get a better understanding of our surroundings. We are proposing a new model for bottom-up visual attention based on Bayesian adaptive estimation and mutual information.
+In our daily lives, the human brain continuously processes a dynamic stream of visual input. However, our brain has limited computational resources to process them. To track important moving objects instead of getting lost in massive data, attention plays an important role here enabling us to selectively focus on certain stimuli while filtering out others. For example, when playing basketball, we focus on the moving basketball and may neglect irrelevant objects such as a walking passerby. This raises a key question: How does the brain efficiently direct attention to track multiple objects in dynamic environments? In this research, we propose a process model based on Bayesian adaptive estimation and information gain to explain the allocation of attention in multiple object tracking. 
 
 <hr style="border: 0.5px solid #f0f0f0; margin: 15px 0;">
 **What is the representation of attention? (Supervisor: Xing Tian)**
 
-It is a long way to go from “seeing” information as massive amounts of basic visual features to “understanding” them as knowledge, at which stage do we select them? This question (representation of attention) has been under debate for decades. Some believe that selection is solely based on basic visual features, while others believe that selection can also happen after grouping. In this study, we designed a novel visual search paradigm with eye-tracking and seeked to offer strong evidence for the later hypothesis.
+Visual information is selectively processed in our brain. But at what state of visual processing does attention operate is unclear and has been under debate for decades. Early selection theory argue that attention operates at the earliest stages of perception, selecting specific visual features. While late selection theory believes that attention can also act after perceptual grouping has occurred. To address this ongoing debate, we design a novel visual search paradigm using eye-tracking to provide strong empirical evidence for the late selection theory.
 
 <hr style="border: 0.5px solid #f0f0f0; margin: 15px 0;">
 ### Planning
 **How do humans plan? (Supervisor: Wei Ji Ma)**
 
-Planning is a complex cognitive process that requires mental stimulation for future scenarios. A traditional psychological method to investigate planning is called the “think-aloud” method. In this study, we revived this method in a game called 4-in-a-row. We recorded the free narration when participants were solving puzzles that required planning. We coded the narrations into a set of qualitative and quantitative metrics that offer a comprehensive understanding of human planning and inspired us to build new models.
+Planning is a complex cognitive process that requires mental stimulation for future scenarios. In this research, we study human planning with a game called 4-in-a-row. Unlike more complicated games like chess, 4-in-a-row offers a simpler, more accessible framework for studying planning. Previously, our lab proposed a computational cognitive model that can predict human moves in the game. To test this model and gain deeper insights for planning, we revive the traditional psychological method “think-aloud protocol”, which has been used to study how experts play chess (de Groot 1946). Our findings will help refine the existing model and provide new insights into human planning.
 
 <em style="color: #4b6aa1;"><a href="/images/thinkaloud_poster.pdf" style="color: #4b6aa1; text-decoration: none;" target="_blank">Click here for viewing the poster</a></em>
 
@@ -94,9 +94,9 @@ Planning is a complex cognitive process that requires mental stimulation for fut
 ### Decision Making
 **How do people learn to make decisions from reward history?**
 
-This is a final project from one of my favorite course “Decision Making” at NYU taught by <strong style="color: #4b6aa1;"><a href="https://as.nyu.edu/faculty/laurence-thomas-maloney.html" style="color: #4b6aa1; text-decoration: none;">Prof. Laurence Maloney</a></strong>.
+This is a final project from one of my favorite courses “Decision Making” at NYU taught by <strong style="color: #4b6aa1;"><a href="https://as.nyu.edu/faculty/laurence-thomas-maloney.html" style="color: #4b6aa1; text-decoration: none;">Prof. Laurence Maloney</a></strong>.
 
-Humans can learn from the past and adjust their perception of value and probability dynamically. For example, some people become more and more addicted to simple gambling games as they play them. To investigate this question, Prof. Maloney and I designed a series of experiments to play a lottery game for multiple rounds. They could make choices among “purchase,” “skip,” and "exit,” with an immediate outcome (whether winning the lottery or not) given after each trial. Our pilot data showed that the choices of participants are biased by a succession of wins or losses. We developed process models based on prospect theory, machine learning, and weighted Markov decision process.
+Humans learn from the past and adjust their decision-making accordingly. According to Prospect theory, decisions are evaluated by the value function and decision weight function (distorted probability). The question is, How does the reward history influence our perception of value and/or perception of probability? To investigate this question, we design a series of experiments to play a lottery game for multiple rounds. Participants could make choices among “purchase,” “skip,” and "exit,” with an immediate outcome (whether winning the lottery or not) given after each trial. To account for the biased human performance, We develop process models based on Prospect theory and a weighted Markov decision process.
 
 
 <span class='anchor' id='-educations'></span>
